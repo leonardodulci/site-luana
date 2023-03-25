@@ -1,22 +1,77 @@
 @charset "UTF-8";
-@font-face {
-    font-family: 'plante';
-    src: url(fonte/Plante.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+     
+    @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
 }
+:root{
+    --fonte-titulo:'Sacramento';
+    --fonte-textopeq: 'Montserrat';
+    --fonte-textogrande: 'bebas neue';
+}
 header{
-   background-color: pink;
-    padding: 85px;
+   background-color: #ffc0cb;
+    padding: 50px;
 
 }
 header > h1{
-    font-family: 'plante';
+   font-family: var(--fonte-titulo);
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
+}
+header > p{
+    text-align: center;
+    font-family:var(--fonte-textopeq) ;
+    font-weight: 1.5em;
+}
+
+nav{
+   padding: 10px;
+  
+  
+}
+nav > a{
+    padding-right:25px;
+    text-decoration: none;
+    color:#754149;
+    font-weight: bold;
+}
+nav > a:hover{
+    background-color: #FFC0CB;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+.q1{
+    margin: auto;
+   position: absolute;
+   
+}
+.q1 >h1{
+    font-family: var(--fonte-textogrande);
+    font-size: 5em;
+    font-weight: bold;
+    margin: 15px;
+    
+
+}
+.q1 > p{
+    width: 350px;
+    margin: 30px 30px 30px 125px;
+    padding: 30px;    ;
+    background-color: #F2B6C0;
+    text-align: center;
+    text-align: justify;
+    
+}
+.q1 > img{
+    display: block;
+    margin: auto;
+    position: absolute;
+    left:770px ;
+    top: 20px;
+    border-radius: 5px;
 }
