@@ -13,6 +13,8 @@
     --fonte-textopeq: 'Montserrat';
     --fonte-textogrande: 'bebas neue';
 }
+
+
 header{
    background-color: #ffc0cb;
     padding: 50px;
@@ -67,7 +69,7 @@ nav > a:hover{
     text-align: justify;
     
 }
-.q1 > img{
+.q1 > picture{
     display: block;
     margin: auto;
     position: absolute;
