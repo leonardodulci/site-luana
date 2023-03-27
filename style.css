@@ -47,6 +47,10 @@ nav > a:hover{
     padding: 10px;
     transition-duration: 0.5s;
 }
+main{
+    min-width: 350px;
+    max-width: 1200px;
+}
 .q1{
     margin: auto;
    position: absolute;
@@ -76,4 +80,8 @@ nav > a:hover{
     left:770px ;
     top: 20px;
     border-radius: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
 }
