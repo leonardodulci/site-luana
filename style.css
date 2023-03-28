@@ -19,6 +19,7 @@ header{
    background-color: #ffc0cb;
     padding: 50px;
 
+
 }
 header > h1{
    font-family: var(--fonte-titulo);
@@ -50,6 +51,7 @@ nav > a:hover{
 main{
     min-width: 350px;
     max-width: 1200px;
+   
 }
 .q1{
     margin: auto;
