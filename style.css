@@ -38,6 +38,7 @@ nav{
   
 }
 nav > a{
+    padding-left: 10px;
     padding-right:25px;
     text-decoration: none;
     color:#754149;
@@ -48,42 +49,29 @@ nav > a:hover{
     padding: 10px;
     transition-duration: 0.5s;
 }
-main{
-    min-width: 350px;
-    max-width: 1200px;
-   
-}
-.q1{
-    margin: auto;
-   position: absolute;
-   
-}
-.q1 >h1{
-    font-family: var(--fonte-textogrande);
-    font-size: 5em;
-    font-weight: bold;
-    margin: 15px;
-    
 
+span > h1{
+    font-family: var(--fonte-textogrande);
+    background-color: #ffc0cb;
+    max-width: 350px;
+    padding: 10px;
+ 
 }
-.q1 > p{
-    width: 350px;
-    margin: 30px 30px 30px 125px;
-    padding: 30px;    ;
-    background-color: #F2B6C0;
-    text-align: center;
-    text-align: justify;
-    
+span > p{
+    background-color: #ffc0cb;
+    max-width: 350px;
+    padding: 10px;
+}   
+.q1{
+    padding: 15px;
+ 
+   
 }
-.q1 > picture{
-    display: block;
-    margin: auto;
+span.q2 > picture{
+    position: relative;
+}
+span.q2 > picture > img{
     position: absolute;
-    left:770px ;
-    top: 20px;
-    border-radius: 5px;
-}
-footer{
-    background-color: black;
-    color: white;
+    left: 750px;
+    top: -320px;
 }
