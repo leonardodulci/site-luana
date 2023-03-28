@@ -8,6 +8,11 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    min-width: 350px;
+    max-width: 1200px;
+    margin: auto;
+}
 :root{
     --fonte-titulo:'Sacramento';
     --fonte-textopeq: 'Montserrat';
@@ -18,6 +23,7 @@
 header{
    background-color: #ffc0cb;
     padding: 50px;
+  
 
 }
 header > h1{
@@ -47,39 +53,45 @@ nav > a:hover{
     padding: 10px;
     transition-duration: 0.5s;
 }
-main{
-    min-width: 350px;
-    max-width: 1200px;
-}
-.q1{
-    margin: auto;
-   position: absolute;
-   
-}
-.q1 >h1{
+
+
+.q1 > picture > h1{
     font-family: var(--fonte-textogrande);
     font-size: 5em;
     font-weight: bold;
-    margin: 15px;
+   
     
 
 }
-.q1 > p{
-    width: 350px;
-    margin: 30px 30px 30px 125px;
-    padding: 30px;    ;
-    background-color: #F2B6C0;
-    text-align: center;
+ .q1 > picture{
+    max-width: 650px;
+    padding: 30px; 
+    
+   
+    
+}
+ .q1 >  picture > img{
+    
+   border-radius: 5px;
+
+  
+
+}
+.q2 {
     text-align: justify;
     
 }
-.q1 > picture{
-    display: block;
-    margin: auto;
-    position: absolute;
-    left:770px ;
-    top: 20px;
-    border-radius: 5px;
+.q2 > h1{
+    background-color: #FFC0CB;
+    max-width: 400px;
+    padding-right: 30px;
+    font-family: var(--fonte-textogrande);
+}
+.q2 > p{
+    background-color: #FFC0CB;
+    max-width: 400px;
+    padding: 30px;
+    font-family: var(--fonte-textopeq);
 }
 footer{
     background-color: black;
