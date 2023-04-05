@@ -8,22 +8,26 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    min-width: 350px;
-    max-width: 1200px;
-    margin: auto;
-}
 :root{
     --fonte-titulo:'Sacramento';
     --fonte-textopeq: 'Montserrat';
     --fonte-textogrande: 'bebas neue';
+
+    --claro01:#FFC0CB;
+    --pink:#EC6A80;
+    --claro02:#E8AEB8;
+    --escuro:#692F39;
+    --opaco:#B5888F;
 }
-
-
+html, body{
+    min-height: 100vh;
+    background-color: var(--claro01);
+    font-family: var(--fonte1);
+}
 header{
-   background-color: #ffc0cb;
+   background-color: var(--claro01);
     padding: 50px;
-  
+
 
 }
 header > h1{
@@ -39,17 +43,19 @@ header > p{
 
 nav{
    padding: 10px;
+   background-color: var(--escuro);
   
   
 }
 nav > a{
+    padding-left: 10px;
     padding-right:25px;
     text-decoration: none;
-    color:#754149;
+    color:var(--claro02);
     font-weight: bold;
 }
 nav > a:hover{
-    background-color: #FFC0CB;
+    background-color: var(--claro02);
     padding: 10px;
     transition-duration: 0.5s;
 }
