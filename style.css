@@ -54,45 +54,40 @@ nav > a:hover{
     transition-duration: 0.5s;
 }
 
-
-.q1 > picture > h1{
-    font-family: var(--fonte-textogrande);
-    font-size: 5em;
-    font-weight: bold;
-   
-    
-
-}
- .q1 > picture{
-    max-width: 650px;
-    padding: 30px; 
-    
-   
-    
+.q1 , img{
+    margin-top: 30px;
 }
  .q1 >  picture > img{
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+    border-radius: 5px;
+    width: 40vw;
     
-   border-radius: 5px;
-
-  
-
+    position: relative;
 }
-.q2 {
+
+  .q2{
+    position: absolute;
+    background-color: #FFC0CB;
+    width: 35vw;
+    height: 50vh;
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 5px;
     text-align: justify;
-    
-}
-.q2 > h1{
-    background-color: #FFC0CB;
-    max-width: 400px;
-    padding-right: 30px;
+    text-align: center;
+
+  }  
+  .q2 > h1{
     font-family: var(--fonte-textogrande);
-}
-.q2 > p{
-    background-color: #FFC0CB;
-    max-width: 400px;
-    padding: 30px;
-    font-family: var(--fonte-textopeq);
-}
+    
+  }
+  .q2 > p{
+    height: 200px;
+  }
+
+
 footer{
     background-color: black;
     color: white;
