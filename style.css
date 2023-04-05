@@ -21,7 +21,6 @@
 }
 html, body{
     min-height: 100vh;
-    background-color: var(--claro01);
     font-family: var(--fonte1);
 }
 header{
@@ -58,6 +57,7 @@ nav > a:hover{
     background-color: var(--claro02);
     padding: 10px;
     transition-duration: 0.5s;
+    color: #B5888F;
 }
 
 .q1 , img{
