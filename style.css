@@ -23,49 +23,24 @@
 
 body{
 
-    
-}
-
- header{
-    display: block;
-    margin: auto;
     background-color: white;
-    text-align: center;
-}   
-header > div > h1{
+}
+header{
     font-family: 'dream';
-    font-size: 4em;
-}
-header > div >  p{
-    font-family: 'dream';
-    font-size: 20px;
-}
-header > div  {
     text-align: center;
-    background-color: var(--cor6);
-    padding: 60px;
-    
+    box-shadow: 1px 0.2px 1px black;
 }
-main {
-    margin: auto;
-    max-width: 850px;
-    height: 95vh;
-    background-color: white;
-    box-shadow: 0px 0px 12px black;
+header > .titulo{
+    padding: 50px;
+    color: rgba(54, 54, 54, 0.712);
+    font-size: 1.5em;
 }
 
-main > span > h1{
-    border: solid 1px black;
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: 'dream';
+.titulo > p{
+    color: var(--cor2);
+    text-shadow: 1px 1px 1px black;
+    font-size: 1em;
 }
- 
-main > span > img{
-    border-radius: 5px;
-    margin-left: 60px;
-}
-
 
 
 
