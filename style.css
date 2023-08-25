@@ -61,14 +61,6 @@ main > nav > a:hover{
 }
 
 main > section > .imgPrincipal{
-    display: block;
-    margin: auto;
-    border-radius: 3px;
+    border-radius: 10px;
 }
-
-main > section > .text{
-    display: none;
-}
-
-
 }
