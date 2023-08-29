@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     *{
         margin: 0px;
@@ -117,9 +117,9 @@ nav{
 #contato > .link{
     text-align: center;
     text-decoration: none; 
-    padding-left: 30px;
-    padding-right: 56px;
     font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-family: 'dream';
     color: black;
     cursor: pointer;
@@ -139,5 +139,10 @@ nav{
 #localizacao > h1{
     font-family: 'dream';
     margin-bottom: 15px;
+}
+#localizacao > iframe{
+    width: 400px;
+    height: 500px;
+
 }
 }
