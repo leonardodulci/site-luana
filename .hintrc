@@ -19,6 +19,7 @@
       {
         "frame-title": "off"
       }
-    ]
+    ],
+    "highest-available-document-mode": "off"
   }
 }
