@@ -50,8 +50,9 @@ header{
 }
 
 nav{
-    padding-top: 15px;
-    text-align: center;
+    position: absolute;
+    top: 66px;
+    left: 1055px;
 }
 
  nav > a{
@@ -67,32 +68,90 @@ nav{
 }
 #sobre{
     padding-top:124px ;
+    columns: 2;
 }
 
 #sobre > img{
     display: block;
     margin: auto;
-    padding-bottom: 50px;
+    margin-left: 140px;
+    padding-bottom: 120px;
+    width: 530px;
+    border-radius: 10px 10px 10px 10px;
 }
 
-
-#img{
-    
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#img > h1{
-    text-align: center;
+#sobre > div > h1{
     font-family: 'dream';
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    padding-top: 70px;
+}
+#sobre > div > .hidden {
+    font-family: 'dream';
+    font-size: 21px;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 77px; 
+   padding-top:20px ;
+    
 }
 
-#img > img{
+/* Estilo do contêiner do carrossel */
+#carrossel {
+    max-width: 1150px; /* Largura máxima do carrossel */
+    margin: 0 auto; /* Centralizar o carrossel horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilo da imagem grande */
+.imagem-grande {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo das miniaturas */
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre as miniaturas */
     padding: 10px;
-    display: block;
-    margin: auto;
-    
+}
+
+.miniaturas img {
+    max-width: 100px; /* Largura máxima das miniaturas */
+    cursor: pointer; /* Mostrar cursor de ponteiro ao passar o mouse */
+    transition: opacity 0.3s ease; /* Efeito de transição de opacidade */
+}
+
+.miniaturas img:hover {
+    opacity: 0.7; /* Opacidade reduzida ao passar o mouse */
+}
+
+/* Estilo das setas de navegação */
+.navegacao {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.seta-esquerda, .seta-direita {
+    font-size: 24px; /* Tamanho da fonte das setas */
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333; /* Cor de fundo das setas */
+    color: #fff; /* Cor do ícone das setas */
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: background-color 0.3s ease; /* Efeito de transição de cor de fundo */
+}
+
+.seta-esquerda:hover, .seta-direita:hover {
+    background-color: #555; /* Cor de fundo das setas ao passar o mouse */
 }
 
 #contato{
@@ -136,14 +195,17 @@ nav{
     display: block;
     margin: auto;
     padding-top: 20px;
+    background-color: var(--cor2);
 }
 #localizacao > h1{
     font-family: 'dream';
     margin-bottom: 15px;
+    
 }
 #localizacao > iframe{
-    width: 400px;
-    height: 500px;
+    width: 1150px;
+    height: 505px;
+    border-radius: 5px;
 
 }
 }
