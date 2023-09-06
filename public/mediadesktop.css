@@ -1,5 +1,5 @@
 @charset "UTF-8";
-    @media screen and (min-width: 200px) and (max-width: 768px) {
+    @media screen and (min-width:767px) and (max-width: 2000px) {
         
     *{
         margin: 0px;
@@ -7,7 +7,7 @@
     }
 
     @font-face {
-        font-family:'dream';
+        font-family: 'dream';
         src: url(fonte/dream\ orphanage\ rg.otf) format('opentype');
     } 
 
@@ -23,7 +23,6 @@
 
 body{
     background-color: white;
-    font-family: 'dream';
 }
 header{
     background-color: white;
