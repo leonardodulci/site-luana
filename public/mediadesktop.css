@@ -24,6 +24,9 @@
 body{
     background-color: white;
 }
+body , html{
+    scroll-behavior: smooth;
+}
 header{
     background-color: white;
     font-family: 'dream';
@@ -80,14 +83,14 @@ nav{
     border-radius: 10px 10px 10px 10px;
 }
 
-#sobre > div > h1{
+#sobre > .textDesktop > h1{
     font-family: 'dream';
     text-align: center;
     margin-bottom: 20px;
     font-size: 28px;
     padding-top: 70px;
 }
-#sobre > div > .hidden {
+#sobre > .textDesktop > .hidden {
     font-family: 'dream';
     font-size: 21px;
     height: 300px;
@@ -98,7 +101,9 @@ nav{
    padding-top:20px ;
     
 }
-
+#sobre > .textMobile{
+    display: none;
+}
 /* Estilo do contêiner do carrossel */
 #carrossel {
     max-width: 1150px; /* Largura máxima do carrossel */
@@ -131,7 +136,9 @@ nav{
 .miniaturas img:hover {
     opacity: 0.7; /* Opacidade reduzida ao passar o mouse */
 }
-
+.miniaturas > h1{
+    display: none;
+}
 /* Estilo das setas de navegação */
 .navegacao {
     text-align: center;
