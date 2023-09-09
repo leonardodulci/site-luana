@@ -1,0 +1,218 @@
+@charset "UTF-8";
+    @media screen and (min-width:767px) and (max-width: 2000px) {
+        
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    @font-face {
+        font-family: 'dream';
+        src: url(fonte/dream\ orphanage\ rg.otf) format('opentype');
+    } 
+
+    :root{
+        --cor1: #BDA899;
+        --cor2: #BFB7AE;
+        --cor3: #9C8F84;
+        --cor4: #262321;
+        --cor5: #38302A;
+        --cor6: #756A62;
+        --cor7: rgb(235, 233, 230);
+    }
+
+body{
+    background-color: white;
+}
+body , html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: white;
+    font-family: 'dream';
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+ .titulo{
+    padding-top: 15px;
+    text-align: center;
+    color: #262321b6;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+
+}
+
+.titulo > h1 > p{
+    color: var(--cor2);
+    text-shadow: 1px 1px 1px black;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    
+}
+
+nav{
+    position: absolute;
+    top: 66px;
+    left: 1055px;
+}
+
+ nav > a{
+    font-family: 'dream';
+    color: var(--cor4);
+    text-decoration: none;
+    margin-left: 15px;   
+
+}
+ nav > a:hover{
+    transform: translate(-3px , -3px);
+    text-shadow: 0px 1px 0px black;
+}
+#sobre{
+    padding-top:124px ;
+    columns: 2;
+}
+
+#sobre > img{
+    display: block;
+    margin: auto;
+    margin-left: 140px;
+    padding-bottom: 120px;
+    width: 530px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#sobre > .textDesktop > h1{
+    font-family: 'dream';
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    padding-top: 70px;
+}
+#sobre > .textDesktop > .hidden {
+    font-family: 'dream';
+    font-size: 21px;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 77px; 
+   padding-top:20px ;
+    
+}
+#sobre > .textMobile{
+    display: none;
+}
+/* Estilo do contêiner do carrossel */
+#carrossel {
+    max-width: 1150px; /* Largura máxima do carrossel */
+    margin: 0 auto; /* Centralizar o carrossel horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilo da imagem grande */
+.imagem-grande {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo das miniaturas */
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre as miniaturas */
+    padding: 10px;
+}
+
+.miniaturas img {
+    max-width: 100px; /* Largura máxima das miniaturas */
+    cursor: pointer; /* Mostrar cursor de ponteiro ao passar o mouse */
+    transition: opacity 0.3s ease; /* Efeito de transição de opacidade */
+}
+
+.miniaturas img:hover {
+    opacity: 0.7; /* Opacidade reduzida ao passar o mouse */
+}
+.miniaturas > h1{
+    display: none;
+}
+/* Estilo das setas de navegação */
+.navegacao {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.seta-esquerda, .seta-direita {
+    font-size: 24px; /* Tamanho da fonte das setas */
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333; /* Cor de fundo das setas */
+    color: #fff; /* Cor do ícone das setas */
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: background-color 0.3s ease; /* Efeito de transição de cor de fundo */
+}
+
+.seta-esquerda:hover, .seta-direita:hover {
+    background-color: #555; /* Cor de fundo das setas ao passar o mouse */
+}
+
+#contato{
+    text-align: center;
+    margin-bottom: 50px;
+
+    
+}
+#contato > h1{
+    font-family: 'dream';
+    margin-top: 60px;
+    background-color:white;
+}
+#contato > a > button{
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-color: var(--cor1);
+}
+
+#contato > .link{
+    text-align: center;
+    text-decoration: none; 
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'dream';
+    color: black;
+    cursor: pointer;
+}
+
+#contato > .link:hover , button:hover{
+    transform: translate(-3px , -3px);
+    text-shadow: 0px 1px 0px black;
+}
+
+#localizacao{
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    background-color: var(--cor2);
+}
+#localizacao > h1{
+    font-family: 'dream';
+    margin-bottom: 15px;
+    
+}
+#localizacao > iframe{
+    width: 1150px;
+    height: 505px;
+    border-radius: 5px;
+
+}
+}
