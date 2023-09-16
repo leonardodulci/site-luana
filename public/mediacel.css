@@ -3,7 +3,8 @@
         
     *{
         margin: 0px;
-        padding: 0px;
+        padding: 0px; 
+        scroll-behavior: smooth;
     }
 
     @font-face {
@@ -25,9 +26,9 @@ body{
     background-color: white;
     font-family: 'dream';
 }
-body , html{
-    scroll-behavior: smooth;
-}
+
+   
+
 header{
     background-color: white;
     font-family: 'dream';
