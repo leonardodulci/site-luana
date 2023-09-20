@@ -30,7 +30,7 @@ body{
    
 
 header{
-    background-color: white;
+    background-color: var(--cor3);
     font-family: 'dream';
     position: fixed;
     width: 100%;
@@ -94,7 +94,7 @@ nav{
     line-height: 18px;
     letter-spacing: 3px;
     color: var(--cor5);
-    font-size: 14px;
+    font-size: 10px;
   }
   #sobre > .textDesktop{
     display: none;
@@ -168,18 +168,22 @@ nav{
     background-color: var(--cor1);
 }
 
-#contato > .link{
+#contato > div >  .link{
     text-align: center;
     text-decoration: none; 
     font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: 'dream';
     color: black;
     cursor: pointer;
 }
 
-#contato > .link:hover , button:hover{
+#contato > div {
+    margin-left: -30px;
+}
+
+#contato > div > .link:hover , button:hover{
     transform: translate(-3px , -3px);
     text-shadow: 0px 1px 0px black;
 }
