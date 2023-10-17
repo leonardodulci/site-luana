@@ -173,6 +173,7 @@ nav{
     font-family: 'dream';
     margin-top: 60px;
     background-color:white;
+    font-size: 2em;
 }
 #contato > a > button{
     padding: 30px;
@@ -188,7 +189,6 @@ nav{
 
  #contato > div > .link{
     text-align: center;
-    text-decoration: none; 
     font-size: 20px;
     padding-left: 50px;
     padding-right: 50px;
@@ -221,3 +221,29 @@ nav{
 
 }
 }
+
+
+
+/*
+<section id="sobre">
+
+        <img src="imgMobile/IMG_2753-Editar.jpg" alt="gmakes" id="imagem-luana"> 
+        
+        <div class="textDesktop"> 
+            <h1>Olá, Sou Luana Gomes, a Sua Maquiadora!</h1>
+            <p id="descricao-luana" class="hidden">
+            
+                Se você deseja realçar sua beleza natural e sentir-se poderosa, estou aqui para te ajudar.  Com anos de experiência e treinamento constante, posso garantir que você terá a melhor experiência possível. <br><br>
+                
+                Meu objetivo é que você saia do meu estúdio não apenas mais bonita, mas também mais confiante.Cada pincelada é feita com carinho e atenção aos detalhes, porque você merece o melhor.
+                
+                <br><br>
+                Não importa a ocasião, estou aqui para torná-la ainda mais especial.Então, se você deseja uma maquiagem que realce a sua individualidade e destaque a sua beleza única, agende um horário comigo. <br><br>
+                Vamos criar algo incrível juntas!
+            </p>
+        </div>
+        <div class="textMobile">
+            <p>"Olá, sou Luana Gomes, a sua maquiadora pessoal. Quer realçar sua beleza e sentir-se poderosa? Com anos de experiência e amor pelo que faço, garanto uma experiência incrível. Saia do meu estúdio mais confiante e bela. Para qualquer ocasião, estou aqui para torná-la especial. Agende seu horário agora e vamos criar algo incrível juntas!" </p>
+        </div>
+
+    </section>

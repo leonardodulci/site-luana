@@ -7,11 +7,12 @@
     <title>Luana Gomes MakeUp</title>
     <link rel="stylesheet" href="mediacel.css">
     <link rel="stylesheet" href="mediadesktop.css">
-    <script type="module" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADj0m_D2kGEs3s036onYEj6M6gZDrg3Xo&libraries=places&callback=initMap"></script>
+    
 
 
 </head>
 <body> 
+    
 
     <header>
         <div class="titulo">
@@ -23,7 +24,7 @@
     
 <nav>    
     <a href="#sobre">Sobre</a>
-    <a href="#img" target="_self" rel="">Fotos</a>
+    <a href="#carrossel">Fotos</a>
     <a href="#contato">Contato</a>
     <a href="#localizacao">Localização</a>
 
@@ -31,28 +32,17 @@
 </header>
 <main>  
   
-    <section id="sobre">
-
-        <img src="imgMobile/img.luana.png" alt="gmakes" id="imagem-luana"> 
-        
-        <div class="textDesktop"> 
-            <h1>Olá, Sou Luana Gomes, a Sua Maquiadora!</h1>
-            <p id="descricao-luana" class="hidden">
-            
-                Se você deseja realçar sua beleza natural e sentir-se poderosa, estou aqui para te ajudar.  Com anos de experiência e treinamento constante, posso garantir que você terá a melhor experiência possível. <br><br>
-                
-                Meu objetivo é que você saia do meu estúdio não apenas mais bonita, mas também mais confiante.Cada pincelada é feita com carinho e atenção aos detalhes, porque você merece o melhor.
-                
-                <br><br>
-                Não importa a ocasião, estou aqui para torná-la ainda mais especial.Então, se você deseja uma maquiagem que realce a sua individualidade e destaque a sua beleza única, agende um horário comigo. <br><br>
-                Vamos criar algo incrível juntas!
-            </p>
+        <div class="container" id="content-container">
+            <img src="imgMobile/IMG_2753-Editar.jpg" alt="gmakes" id="imagem-luana"> 
+            <div class="text" id="text">
+                <h1>Olá, Sou Luana Gomes, a Sua Maquiadora!</h1>
+                <p>
+                    Se você deseja realçar sua beleza natural e sentir-se poderosa, estou aqui para te ajudar. Com anos de experiência e treinamento constante, posso garantir que você terá a melhor experiência possível.
+                </p>
+            </div>
         </div>
-        <div class="textMobile">
-            <p>"Olá, sou Luana Gomes, a sua maquiadora pessoal. Quer realçar sua beleza e sentir-se poderosa? Com anos de experiência e amor pelo que faço, garanto uma experiência incrível. Saia do meu estúdio mais confiante e bela. Para qualquer ocasião, estou aqui para torná-la especial. Agende seu horário agora e vamos criar algo incrível juntas!" </p>
-        </div>
-
-    </section>
+        <div class="arrow" id="toggle-button">➡</div>
+    
 
     <section id="carrossel">
         <div class="imagem-grande">
@@ -100,9 +90,9 @@
     </section>
 
     
-    <div id="google-reviews"  onload="initmap()">
+    <span id="google-reviews" onload="initMap()">
         
-    </div>
+    </span>
     
 
     <section id="localizacao">
@@ -116,6 +106,8 @@
 <script type="module" src="/public/trocas.js"></script>
 <script type="module" src="carrosel.js"></script>
 <script type="module" src="comentarios.js"></script>
+<script type="module" src="script.js"></script>
 
+<script type="module" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADj0m_D2kGEs3s036onYEj6M6gZDrg3Xo&libraries=places&callback=comentario"></script>
 </body>
 </html>

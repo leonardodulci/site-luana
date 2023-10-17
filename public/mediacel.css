@@ -75,27 +75,36 @@ nav{
   #sobre{
     columns: 2;
   }
- #sobre > #imagem-luana {
-    position: relative;
-    top: 30px;
-    left: 10px;
-    width: 50vw; /* Garante que a imagem ocupe todo o espaço do contêiner */
-    border-radius: 10px;
-    z-index: 1;
-  }
-  
-  #sobre > .textMobile {
-    position: absolute; /* Permite posicionar o texto em relação à imagem */
-    top: 340px;
-    left: 372px; /* Define a posição horizontal do texto (pode ser ajustada conforme necessário) */
-    transform: translate(-50%, -50%); /* Centraliza o texto no meio da imagem */
-    width: 40vw;
+/* styles.css */
+.container {
     text-align: center;
-    line-height: 18px;
-    letter-spacing: 3px;
-    color: var(--cor5);
-    font-size: 10px;
-  }
+    position: relative;
+}
+
+#imagem-luana {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+#text {
+    display: none;
+    text-align: center;
+    position: relative;
+    top: 145px;
+    height: 280px;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
   #sobre > .textDesktop{
     display: none;
   }
