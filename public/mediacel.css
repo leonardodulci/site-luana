@@ -88,6 +88,9 @@ nav{
     border-radius: 10px;
 
 }
+#sobre > .imgDesktop{
+    display: none;
+}
 
 #text {
     display: none;

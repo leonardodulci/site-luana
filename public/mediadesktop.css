@@ -103,7 +103,7 @@ nav{
    padding-top:20px ;
     
 }
-#sobre > .textMobile{
+#sobre > .container , .arrow , .text  , .imgContainer{
     display: none;
 }
 /* Estilo do contêiner do carrossel */
