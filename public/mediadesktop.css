@@ -108,7 +108,7 @@ nav{
 }
 /* Estilo do contêiner do carrossel */
 #carrossel {
-    max-width: 1150px; /* Largura máxima do carrossel */
+    max-width: 1200px; /* Largura máxima do carrossel */
     margin: 0 auto; /* Centralizar o carrossel horizontalmente */
     padding: 20px; /* Espaçamento interno */
     background-color: #f0f0f0; /* Cor de fundo */
