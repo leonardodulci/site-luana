@@ -163,6 +163,15 @@ nav{
     background-color: #555; /* Cor de fundo das setas ao passar o mouse */
 }
 
+#coments{
+    text-align: center;
+    padding-top: 40px;
+}
+
+#coments > h1{
+    font-family: 'dream';
+}
+
 #contato{
     text-align: center;
     margin-bottom: 50px;
@@ -188,6 +197,12 @@ nav{
 }
 
  #contato > div > .link{
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-color: var(--cor1);
     text-align: center;
     font-size: 20px;
     padding-left: 50px;
@@ -195,6 +210,7 @@ nav{
     font-family: 'dream';
     color: black;
     cursor: pointer;
+    border: 1px solid black;
 }
 
 #contato > div >  .link:hover , button:hover{
@@ -220,30 +236,35 @@ nav{
     border-radius: 5px;
 
 }
+
+footer{
+    height: 150px;
+}
+footer > .box{
+    position: relative;
+    top: 50px;
+    left: 170px;
+}
+
+footer > .box > h1 {
+   font-family: 'dream';
+   color: var(--cor4);
+   font-size: 20px;
+   padding-left: 7px;
+}
+.rotated-icon {
+    transform: rotate(180deg);
+}
+
+footer > .box2{
+    position: relative;
+    left: 375px;
+    top: 14px;
+    font-family: 'dream';
+}
+  
+
 }
 
 
 
-/*
-<section id="sobre">
-
-        <img src="imgMobile/IMG_2753-Editar.jpg" alt="gmakes" id="imagem-luana"> 
-        
-        <div class="textDesktop"> 
-            <h1>Olá, Sou Luana Gomes, a Sua Maquiadora!</h1>
-            <p id="descricao-luana" class="hidden">
-            
-                Se você deseja realçar sua beleza natural e sentir-se poderosa, estou aqui para te ajudar.  Com anos de experiência e treinamento constante, posso garantir que você terá a melhor experiência possível. <br><br>
-                
-                Meu objetivo é que você saia do meu estúdio não apenas mais bonita, mas também mais confiante.Cada pincelada é feita com carinho e atenção aos detalhes, porque você merece o melhor.
-                
-                <br><br>
-                Não importa a ocasião, estou aqui para torná-la ainda mais especial.Então, se você deseja uma maquiagem que realce a sua individualidade e destaque a sua beleza única, agende um horário comigo. <br><br>
-                Vamos criar algo incrível juntas!
-            </p>
-        </div>
-        <div class="textMobile">
-            <p>"Olá, sou Luana Gomes, a sua maquiadora pessoal. Quer realçar sua beleza e sentir-se poderosa? Com anos de experiência e amor pelo que faço, garanto uma experiência incrível. Saia do meu estúdio mais confiante e bela. Para qualquer ocasião, estou aqui para torná-la especial. Agende seu horário agora e vamos criar algo incrível juntas!" </p>
-        </div>
-
-    </section>
