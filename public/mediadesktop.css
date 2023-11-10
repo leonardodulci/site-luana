@@ -191,10 +191,30 @@ nav{
     padding-bottom: 40px;
 }
 
-#contato{
-    padding: 50px;
-    margin-bottom: 50px;
+.tituloContato{
+    text-align: center;
+    font-family: 'dream';
+    padding: 50px 10px 40px 10px;
+}
 
+#contato {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-bottom: 60px ;
+    font-family: 'dream';
+
+}
+#contato > .q1 , .q2{
+    width: 48%;
+}
+
+#contato > .q2{
+    margin-left: 100px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
 }
 #contato > h1{
     font-family: 'dream';
@@ -203,6 +223,50 @@ nav{
     font-size: 2em;
     text-align: center;
 }
+
+/* Estilo para o formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-left: 3px;
+  }
+  
+  /* Estilo para os campos de entrada de texto */
+  input[type="text"],
+
+  textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para os rótulos dos campos */
+  label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  /* Estilo para o botão de envio */
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
 
 #localizacao{
     text-align: center;
@@ -248,50 +312,11 @@ footer > .box2{
     top: 14px;
     font-family: 'dream';
 }
+footer > .boxMobile{
+    display: none;
+}
   
-/* Estilo para o formulário */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    margin-left: 3px;
-  }
-  
-  /* Estilo para os campos de entrada de texto */
-  input[type="text"],
 
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  /* Estilo para os rótulos dos campos */
-  label {
-    font-weight: bold;
-    display: block;
-  }
-  
-  /* Estilo para o botão de envio */
-  button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #2980b9;
-  }
   
 
 }

@@ -71,7 +71,10 @@ nav{
     transform: translate(-3px , -3px);
     text-shadow: 0px 1px 0px black;
 }
-
+#inicio{
+    text-align: center;
+    margin-bottom: 40px;
+}
   #sobre{
     columns: 2;
   }
@@ -160,45 +163,97 @@ nav{
     text-align: center;
 }
 
-#contato{
+#coments{
     text-align: center;
-    margin-bottom: 50px;
+    padding-top: 30px;
+}
+#coments > h1{
+    padding-bottom: 20px;
+}
 
+.tituloContato{
+    text-align: center;
+    font-family: 'dream';
+    padding: 50px 10px 40px 10px;
+}
+
+#contato {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    padding-bottom: 60px ;
+    font-family: 'dream';
+
+}
+#contato > .q1 , .q2{
+    width: 95%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#contato > .q1{
+    border-radius: 10px;
+}
+#contato > .q2{
+    margin-left: 10px;
+    background-color: #f2f2f2;
     
 }
+#contato > .q2 > h1{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
 #contato > h1{
     font-family: 'dream';
     margin-top: 60px;
     background-color:white;
-}
-#contato > a > button{
-    padding: 30px;
-    border-radius: 5px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    background-color: var(--cor1);
-}
-
-#contato > div >  .link{
+    font-size: 2em;
     text-align: center;
-    text-decoration: none; 
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: 'dream';
-    color: black;
+}
+
+/* Estilo para o formulário */
+form {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin-left: 3px;
+    padding: 10px;
+  }
+  
+  /* Estilo para os campos de entrada de texto */
+  input[type="text"],
+
+  textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para os rótulos dos campos */
+  label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  /* Estilo para o botão de envio */
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-}
-
-#contato > div {
-    margin-left: -30px;
-}
-
-#contato > div > .link:hover , button:hover{
-    transform: translate(-3px , -3px);
-    text-shadow: 0px 1px 0px black;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
 
 #localizacao{
     text-align: center;
@@ -215,4 +270,35 @@ nav{
     height: 500px;
 
 }
+
+footer{
+    font-size: 13px;
+    columns: 2;
+    padding: 30px;
 }
+footer > .box{
+    position: relative;
+    top: 4px;
+    left: 50px;
+    font-size: 12px;
+}
+.rotated-icon {
+    transform: rotate(180deg);
+}
+footer > .box > span , #ultimalua , h1{
+    font-size: 23px;
+}
+footer > .box2{
+    display: none;
+}
+footer > .boxMobile{
+    font-size: 13px;
+    text-align: center;
+    font-family: 'dream';
+
+    position: relative;
+    left: -22px;
+    top: 10px;
+}
+}
+
