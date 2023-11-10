@@ -215,7 +215,20 @@ nav{
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 5px;
+
+    
 }
+#contato > .q2 > a{
+    padding-top: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#contato > .q2 > a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
 #contato > h1{
     font-family: 'dream';
     margin-top: 60px;

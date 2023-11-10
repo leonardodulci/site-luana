@@ -71,10 +71,7 @@ nav{
     transform: translate(-3px , -3px);
     text-shadow: 0px 1px 0px black;
 }
-#inicio{
-    text-align: center;
-    margin-bottom: 40px;
-}
+
   #sobre{
     columns: 2;
   }
@@ -204,7 +201,18 @@ nav{
     padding-top: 10px;
     padding-bottom: 20px;
 }
+#contato > .q2 > a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+#contato > .q2 > a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
 
+}
 #contato > h1{
     font-family: 'dream';
     margin-top: 60px;
