@@ -35,6 +35,8 @@ body{
    
     
 }
+
+
 body , html{
     scroll-behavior: smooth;
     
@@ -188,8 +190,15 @@ nav{
 
 #coments > h1{
     font-family: 'dream';
+    padding-top: 25px;
     padding-bottom: 40px;
+    font-size: 2em;
+
 }
+#coments > img{
+    margin: 15px;
+}
+
 
 .tituloContato{
     text-align: center;
@@ -227,6 +236,13 @@ nav{
 #contato > .q2 > a:hover{
     text-decoration: underline;
     color: var(--cor5);
+}
+
+#contato > .q2 > a > .img1{
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 #contato > h1{
@@ -291,7 +307,8 @@ form {
 #localizacao > h1{
     font-family: 'dream';
     margin-bottom: 15px;
-    
+    font-size: 2em;
+
 }
 #localizacao > iframe{
     width: 1150px;
@@ -314,6 +331,7 @@ footer > .box > h1 {
    color: var(--cor4);
    font-size: 20px;
    padding-left: 7px;
+
 }
 .rotated-icon {
     transform: rotate(180deg);
@@ -330,7 +348,13 @@ footer > .boxMobile{
 }
   
 
-  
+.forTopo{
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+}
+
+
 
 }
 
