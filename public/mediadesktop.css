@@ -88,7 +88,9 @@ nav{
     text-align: center;
     margin-bottom: 40px;
 }
-
+.carousel-container{
+    display: none;
+}
 
 #sobre{
     padding: 30px;

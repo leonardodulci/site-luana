@@ -71,6 +71,61 @@ nav{
     transform: translate(-3px , -3px);
     text-shadow: 0px 1px 0px black;
 }
+.inicio{
+    display: none;
+}
+aside {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden; /* Adicionado para esconder conteúdo adicional */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%; /* Garante que cada slide ocupe a largura total do contêiner */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+
 
   #sobre{
     columns: 2;
@@ -213,6 +268,15 @@ nav{
     color: var(--cor5);
 
 }
+#contato > .q2 > a > .img1{
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 50px;
+}
+
+
 #contato > h1{
     font-family: 'dream';
     margin-top: 60px;
@@ -305,8 +369,26 @@ footer > .boxMobile{
     font-family: 'dream';
 
     position: relative;
-    left: -22px;
+    left: 0px;
     top: 10px;
 }
+
+.forTopo{
+    background-color: gray;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+aside > .forTopo  {
+    text-decoration: none;
+    color: white;
+    font-family: 'dream';
+}
+aside > .forTopo:hover{
+    text-decoration: underline;
+}
+
+
 }
 
