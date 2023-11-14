@@ -103,6 +103,8 @@ aside {
 img {
     width: 100%;
     height: auto;
+    margin: auto;
+    display: block;
 }
 
 .indicators {
@@ -273,7 +275,7 @@ img {
     margin-left: 15px;
     border: 1px solid black;
     padding: 10px;
-    width: 50px;
+    width: 40px;
 }
 
 
@@ -351,7 +353,7 @@ footer{
 footer > .box{
     position: relative;
     top: 4px;
-    left: 50px;
+    left: 20px;
     font-size: 12px;
 }
 .rotated-icon {
