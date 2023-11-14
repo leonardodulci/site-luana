@@ -387,12 +387,12 @@ footer > .boxMobile{
     display: block;
 }
 
-aside > .forTopo  {
+article > .forTopo  {
     text-decoration: none;
     color: white;
     font-family: 'dream';
 }
-aside > .forTopo:hover{
+article > .forTopo:hover{
     text-decoration: underline;
 }
 
