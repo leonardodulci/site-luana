@@ -98,13 +98,15 @@ aside {
 
 .slide {
     flex: 0 0 100%; /* Garante que cada slide ocupe a largura total do contêiner */
+    margin: auto;
+    display: block;
 }
 
 img {
-    width: 100%;
+    width: 100vw;
     height: auto;
-    margin: auto;
-    display: block;
+    text-align: center;
+    
 }
 
 .indicators {
@@ -345,8 +347,8 @@ form {
     margin-bottom: 15px;
 }
 #localizacao > iframe{
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 480px;
 
 }
 
