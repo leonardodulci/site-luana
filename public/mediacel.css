@@ -99,7 +99,7 @@ aside {
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 1.5s ease;
 }
 
 .slide {
