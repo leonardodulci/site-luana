@@ -1,5 +1,5 @@
 @charset "UTF-8";
-    @media screen and (min-width:767px) and (max-width: 1400px) {
+    @media screen and (min-width:767px) and (max-width: 2000px) {
         
     *{
         margin: 0px;
@@ -47,29 +47,61 @@ header{
     position: fixed;
     width: 100%;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    height: 150px;
    
 }
+/* Nova classe para o cabeçalho quando a rolagem começar */
+.scrolled {
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.95); /* Deixa com um fundo para se destacar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    padding-left: 25px;
+
+}
+
+.scrolled .titulo { /* Diminui o tamanho da fonte do título */
+    text-align: left;
+    font-size: 10px;
+    
+
+    
+    
+}
+
+.scrolled .subtitulo {
+    font-size: 13px; /* Diminui o tamanho da fonte do subtítulo */
+    text-align: left;
+
+}
+
+.scrolled .MenuNav{
+    font-size: 15px;
+    margin-top: -70px;
+    font-family: "Darker Grotesque";
+}
  .titulo{
-    padding-top: 25px;
     text-align: center;
     color: #262321b6;
-    font-size: 1.5em;
+    font-size: 18px;
     letter-spacing: 2px;
 
 }
 
-.titulo > h1 > p{
+.titulo > h2{
     color: var(--cor2);
     text-shadow: 1px 1px 1px black;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;
     text-align: center;
     
 }
 
 nav{
+    margin-top: 80px;
     text-align: center;
-    margin-top: 30px;
+    margin: auto;
+    padding-top: 50px;
+    font-family: "Darker Grotesque";
     
 }
 
@@ -96,15 +128,13 @@ nav{
 }
 
 #sobre{
-    padding: 30px;
+    padding: 130px;
     columns: 2;
     background-color: var(--cor1);
+    text-align: center;
 }
 
-#sobre > img{
-    display: block;
-    margin: auto;
-    margin-left: 140px;
+#sobre >  .textDesktop > img{
     width: 530px;
     border-radius: 10px 10px 10px 10px;
 }
@@ -189,7 +219,6 @@ nav{
 #coments{
     text-align: center;
     padding-top: 40px;
-    
     
 }
 
@@ -331,12 +360,12 @@ form {
 }
 
 footer{
-    height: 150px;
+    height: 140px;
+    text-align: center;
+    margin-top: 15px;
 }
 footer > .box{
-    position: relative;
-    top: 50px;
-    left: 170px;
+   text-align: center;
 }
 
 footer > .box > h1 {
@@ -351,15 +380,16 @@ footer > .box > h1 {
 }
 
 footer > .box2{
-    position: relative;
-    left: 375px;
-    top: 14px;
+    text-align: center;
     font-family: 'dream';
 }
 footer > .boxMobile{
     display: none;
 }
   
+footer > .box > .material-symbols-outlined{
+    text-align: center;
+}
 
 .forTopo{
     background-color: gray;
