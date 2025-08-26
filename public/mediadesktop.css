@@ -232,7 +232,9 @@ nav{
 #coments > img{
     margin: 15px;
 }
-
+.imgAvaliação{
+    border: 1px black solid;
+}
 
 .tituloContato{
     text-align: center;
@@ -339,14 +341,14 @@ form {
     background-color: #2980b9;
   }
 
-#localizacao{
+#serviços{
     text-align: center;
     display: block;
     margin: auto;
     padding-top: 20px;
     background-color: var(--cor2);
 }
-#localizacao > h1{
+#serviços > h1{
     font-family: 'dream';
     margin-bottom: 15px;
     font-size: 2em;
