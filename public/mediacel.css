@@ -37,6 +37,7 @@ header{
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
     z-index: 100;
 }
+
  .titulo{
     padding-top: 15px;
     text-align: center;
@@ -58,6 +59,7 @@ header{
 nav{
     padding-top: 15px;
     text-align: center;
+    font-size: 18px;
 }
 
  nav > a{
@@ -71,6 +73,50 @@ nav{
     transform: translate(-3px , -3px);
     text-shadow: 0px 1px 0px black;
 }
+/* Nova classe para o cabeçalho quando a rolagem começar */
+.scrolled {
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.95); /* Deixa com um fundo para se destacar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    padding-left: 25px;
+
+}
+
+.scrolled .titulo { /* Diminui o tamanho da fonte do título */
+    text-align: left;
+    font-size: 5px;
+    position: relative;
+    left: -9px;
+    top: 3px;
+  
+}
+
+.scrolled .titulo > h1 , h2{
+    font-size: 15px;
+}
+
+.scrolled .subtitulo {
+    font-size: 13px; /* Diminui o tamanho da fonte do subtítulo */
+    text-align: left;
+
+}
+
+.scrolled .MenuNav{
+    font-size: 13px;
+    position: relative;
+    top: -35px;
+    left: 45px;
+
+
+}
+
+.scrolled .MenuNav > a{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3px;
+
+
+}
+
 .inicio{
     display: none;
 }
@@ -106,6 +152,7 @@ aside {
     flex: 0 0 100%; /* Garante que cada slide ocupe a largura total do contêiner */
     margin: auto;
     display: block;
+    margin-top: 40px;
 }
 
 img {
@@ -141,30 +188,52 @@ img {
     columns: 2;
   }
 /* styles.css */
-.container {
-    text-align: center;
-    position: relative;
-}
+    /* O container agora será o quadro */
+    .container {
+        display: flex; /* Habilita o flexbox */
+        flex-direction: column; /* Itens um abaixo do outro (imagem, depois texto) */
+        align-items: center; /* Centraliza a imagem e o texto horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        background-color: var(--cor2);
+        
+        /* Estilo do "quadro" */
+        border: 1px solid #ccc; /* Borda sutil */
+        border-radius: 10px; /* Cantos arredondados */
+        padding: 20px; /* Espaçamento interno */
+        margin: 20px auto; /* Centraliza o quadro e adiciona margem externa */
+        width: 90%; /* Largura do quadro */
+        max-width: 400px; /* Limita a largura máxima do quadro */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    }
 
-#imagem-luana {
-    width: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
+    #imagem-luana {
+        width: 100%; /* A imagem ocupa a largura total dentro do quadro */
+        max-width: 250px; /* Limita a largura da imagem */
+        height: auto; /* Mantém a proporção */
+        display: block; /* Remove espaços extras */
+        margin: 0 auto 15px auto; /* Centraliza e adiciona margem inferior */
+        border-radius: 8px; /* Cantos arredondados para a imagem */
+    }
 
-}
+    #text {
+        text-align: center; /* Garante que o texto esteja centralizado */
+        padding: 0 10px; /* Espaçamento interno para o texto */
+    }
+
+    #text h2 {
+        font-size: 1.5em; /* Tamanho da fonte para o título */
+        margin-bottom: 10px;
+    }
+
+    #text p {
+        font-size: 0.9em; /* Tamanho da fonte para o parágrafo */
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 10px;
+    }
+
 #sobre > .imgDesktop{
     display: none;
 }
-
-#text {
-    display: none;
-    text-align: center;
-    position: relative;
-    top: 145px;
-    height: 280px;
-}
-
 .arrow {
     cursor: pointer;
     font-size: 24px;
@@ -213,19 +282,29 @@ img {
   
     
 }
- .miniaturas > img{
-    display: block;
-    margin: auto;
-    padding-bottom: 20px;
-    width: 40vw;
+.miniaturas {
+        display: flex; /* Habilita o Flexbox */
+        flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
+        justify-content: center; /* Centraliza as imagens horizontalmente */
+        align-items: flex-start; /* Alinha o conteúdo ao topo do container */
+        gap: 15px; /* Adiciona espaçamento entre as imagens */
+        padding: 20px 10px; /* Adiciona espaçamento interno para o container */
+    }
+
+    .miniaturas > h1 {
+        width: 100%; /* Garante que o título ocupe a largura total */
+        text-align: center; /* Centraliza o título */
+        margin-bottom: 20px;
+    }
     
-
-}
-
-.miniaturas > h1{
-    text-align: center;
-}
-
+    .miniaturas > img {
+        width: calc(50% - 10px); /* Garante que duas imagens caibam na linha, descontando o gap */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block;
+        margin: 0; /* Remove a margem automática para o layout de duas colunas */
+        border-radius: 10px;
+        object-fit: cover; /* Garante que a imagem se ajuste bem dentro do espaço */
+    }
 #coments{
     text-align: center;
     padding-top: 30px;
@@ -344,21 +423,179 @@ form {
     background-color: #2980b9;
   }
 
-#localizacao{
+
+
+  .servicos-section {
     text-align: center;
     display: block;
     margin: auto;
     padding-top: 20px;
+    background-color: var(--cor2);
 }
-#localizacao > h1{
+.servicos-section  > .tituloh2  , .avaliacoes-section > .tituloh2{
+    font-family: 'dream';
+}
+.servicos-section > h1{
     font-family: 'dream';
     margin-bottom: 15px;
-}
-#localizacao > iframe{
-    width: 350px;
-    height: 480px;
+    font-size: 2em;
 
 }
+.servicos-section  > .quadroServiços{
+    height: 55px;
+    width: 50px;
+    background-color: #fff;
+}
+
+.servicos-section {
+    padding: 60px 20px; /* Espaçamento interno */
+    background-color: #f8f8f8; /* Cor de fundo da seção */
+    text-align: center;
+}
+
+.servicos-section h2 {
+    font-family: 'Playfair Display', serif; /* Exemplo de fonte para o título da seção */
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.servicos-container {
+    display: flex; /* Organiza os cards lado a lado */
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha em telas menores */
+    justify-content: center; /* Centraliza os cards */
+    gap: 30px; /* Espaço entre os cards */
+}
+
+.servico-card {
+    background-color: #fff; /* Cor de fundo do card */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    padding: 30px;
+    width: 300px; /* Largura fixa para cada card. Você pode ajustar ou usar porcentagem */
+    max-width: 100%; /* Garante que não ultrapasse a largura da tela */
+    text-align: left; /* Alinha o texto dentro do card à esquerda */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+.servico-card:hover {
+    transform: translateY(-5px); /* Move o card ligeiramente para cima no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra no hover */
+}
+
+.servico-card h3 {
+    font-family: 'Montserrat', sans-serif; /* Exemplo de fonte para o título do serviço */
+    font-size: 1.8em;
+    color: #5d4037; /* Um tom de marrom escuro ou outra cor que combine com a paleta */
+    margin-bottom: 15px;
+}
+
+.servico-card p {
+    font-family: 'Lato', sans-serif; /* Exemplo de fonte para o texto do serviço */
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    overflow-wrap:break-word ;
+}
+
+.servico-card ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin: 0;
+}
+
+.servico-card ul li {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95em;
+    color: #777;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px; /* Espaço para um ícone customizado */
+}
+
+.servico-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Opcional: Adicionar um ícone de checkmark customizado para a lista */
+.servico-card ul li::before {
+    content: '✓'; /* Ou '★' ou outro caractere, ou um SVG de check */
+    color: #8B4513; /* Cor do ícone */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+.avaliacoes-section {
+    padding: 60px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    
+}
+
+.avaliacoes-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.avaliacoes-container {
+    display: grid; /* Melhor para alinhar em grades */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo, com no mínimo 300px por coluna */
+    gap: 20px;
+    justify-content: center;
+}
+
+.avaliacao-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #5d4037; /* Cor que combine com a paleta do site */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.perfil h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.estrelas span {
+    color: gold; /* Cor das estrelas */
+    font-size: 1.2em;
+}
+
+.avaliacao-card p {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+}
+
+
 
 footer{
     font-size: 13px;
