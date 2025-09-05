@@ -644,5 +644,29 @@ article > .forTopo:hover{
 }
 
 
+/*bnt wpp flutuante*/
+
+.botao-wpp-flutuante {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100; /* Garante que o botão fique acima de outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-wpp-flutuante > .botao-wpp-flutuanteIMG {
+    width: 35px;
+    height: 35px;
+}
 }
 

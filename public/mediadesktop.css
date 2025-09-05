@@ -119,6 +119,7 @@ nav{
 .inicio{
     text-align: center;
     margin-bottom: 40px;
+    width: 100%;
 }
 .inicio > .fotoMobile{
     display: none;
@@ -126,7 +127,9 @@ nav{
 .carousel-container{
     display: none;
 }
-
+.inicio > img{
+    width: 377px;
+}
 #sobre{
     padding: 130px;
     columns: 2;
@@ -584,6 +587,30 @@ footer > .box > .material-symbols-outlined{
 
 article > .forTopo:hover{
     text-decoration: underline;
+}
+
+
+.botao-wpp-flutuante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100; /* Garante que o botão fique acima de outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-wpp-flutuante img {
+    width: 35px;
+    height: 35px;
 }
 
 }
