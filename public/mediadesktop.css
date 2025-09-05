@@ -53,7 +53,7 @@ header{
 /* Nova classe para o cabeçalho quando a rolagem começar */
 .scrolled {
     height: 45px;
-    background-color: rgba(255, 255, 255, 0.95); /* Deixa com um fundo para se destacar */
+    background-color: rgba(255, 255, 255, 100); /* Deixa com um fundo para se destacar */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
     padding-left: 25px;
 
