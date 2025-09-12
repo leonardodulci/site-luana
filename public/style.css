@@ -271,7 +271,7 @@ header.scrolled {
 .contact-info-card h4{ font-size: 1.15rem; margin-top:1.4rem; margin-bottom:.8rem; color:var(--cor5); }
 
 .social-icons{ display:flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; }
-.social-icons img{ width: 42px; height: 42px; transition: transform .3s ease; }
+.social-icons img{ width: 42px; height: 42px; transition: transform .3s ease; border-radius: 10px;}
 .social-icons img:hover{ transform: scale(1.06); }
 
 /*
