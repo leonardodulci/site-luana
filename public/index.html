@@ -1,344 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luana Gomes MakeUp</title>
-    <link rel="stylesheet" href="mediacel.css">
-    <link rel="stylesheet" href="mediadesktop.css">
+    <title>Luana Gomes Beauty & Co.</title>
     <link rel="shortcut icon" href="imgMobile/favicon.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    
-    
-
-
+    <link rel="stylesheet" href="mediacel.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LDQ3Q1TBQQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LDQ3Q1TBQQ');
-</script>
-
 <body> 
-  <div id="container">
-      
-      <header>
-          <span class="titulo">
-              <a href="#container" style="text-decoration: none;" class="titulo">
-                  <h1>Luana Gomes</h1>
-                      <h2 class="subtitulo">Beauty and Co.</h2>
-              </a>
-        
-           
-      
-      <nav class="MenuNav">
-      <a href="#sobre">Sobre</a>
-      <a href="#carrossel">Fotos</a>
-      <a href="#coments">Avaliações</a>
-      <a href="#tituloContato">Contato</a>
-      
-      
-       </nav></span>
-      </header>
-      <main>
+    <div id="container">
+        <header>
+            <a href="#hero" class="logo">
+                <h1>Luana Gomes</h1>
+                <h2 class="subtitulo">Beauty & Co.</h2>
+            </a>
+            <nav class="MenuNav">
+                <a href="#sobre">Sobre</a>
+                <a href="#galeria">Fotos</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </header>
 
-    <section class="inicio">
-        <img src="imgMobile/fotoLaressa.png" alt="foto01">
-        <img src="imgMobile/imgLivia01.png" alt="foto02">
-        <img src="imgMobile/fotonovaMOBILE.png" alt="foto03" class="fotoDesktop">
-        <img src="imgMobile/fotonova1.png" alt="foto0nova1" class="fotoDesktop">
-        <img src="imgMobile/fotonova2.png" alt="fotonova02" class="fotoDesktop">
+        <main>
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <h1>Realce Sua Beleza Única</h1>
+                    <p>Maquiagem profissional para todos os seus momentos especiais.</p>
+                    <a href="https://wa.me/5561999225658?text=Olá,%20gostaria%20de%20agendar%20um%20horário." class="btn-cta" target="_blank">Agende seu Horário</a>
+                </div>
+                <div class="hero-image-carousel">
+                    <img src="imgMobile/fotonovaMOBILE.png" alt="Maquiagem profissional Luana Gomes" class="active">
+                    <img src="imgMobile/fotonovaMOBILE2.png" alt="Cliente maquiada por Luana Gomes">
+                    <img src="imgMobile/fotonova03.png" alt="Detalhe de maquiagem artística">
+                    <img src="imgMobile/fotoLaressa.png" alt="Maquiagem para festa">
+                    <img src="imgMobile/imgLivia01.png" alt="Maquiagem natural">
+                    <img src="imgMobile/fotoSandraNova.png" alt="Maquiagem de noiva">
+                </div>
+            </section>
 
-        
-    </section>
+            <section id="sobre" class="about-section">
+                <div class="about-image">
+                    <img src="imgMobile/IMG_2753-Editar.jpg" alt="Luana Gomes Maquiadora">
+                </div>
+                <div class="about-text">
+                    <h2>Olá, Sou Luana Gomes, a Sua Maquiadora!</h2>
+                    <p>Se você deseja realçar sua beleza natural e sentir-se poderosa, estou aqui para te ajudar. Com anos de experiência e treinamento constante, posso garantir que você terá a melhor experiência possível. Meu objetivo é que você saia do meu estúdio não apenas mais bonita, mas também mais confiante. Cada atendimento é feito com carinho e atenção aos detalhes, porque você merece o melhor.</p>
+                    <p>Não importa a ocasião, estou aqui para torná-la ainda mais especial. Então, se você deseja uma maquiagem que realce a sua individualidade e destaque a sua beleza única, agende um horário comigo. Vamos criar algo incrível juntas!</p>
+                    <a href="https://wa.me/5561999225658?text=Olá,%20gostaria%20de%20agendar%20um%20horário." class="btn-cta" target="_blank">Marque seu Horário pelo WhatsApp</a>
+                </div>
+            </section>
 
-
-     <div class="carousel-container">
-        <section id="inicio" class="carousel">
-            <div class="slide">
-                <img src="imgMobile/fotonovaMOBILE.png" alt="foto01">
-            </div>
-            <div class="slide">
-                <img src="imgMobile/fotonovaMOBILE2.png" alt="foto02">
-            </div>
-            <div class="slide">
-                <img src="imgMobile/fotonova03.png" alt="foto03">
-            </div>
-            <!-- Adicione mais slides conforme necessário -->
-        </section>
-    
-            <div class="indicators">
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-                <div class="indicator" ></div>
-                <!-- Adicione mais indicadores conforme necessário -->
-            </div>
-        </div>
-      
-
-      <section id="sobre">
-        <div class="textDesktop">
-          <img src="imgMobile/IMG_2753-Editar.jpg" alt="gmakes" id="imagem-luana" class="imgDesktop">
-      
-          <h1>Olá, Sou Luana Gomes, a Sua Maquiadora!</h1>
-          <p id="descricao-luana" class="hidden">
-      
-              Se você deseja realçar sua beleza natural e sentir-se poderosa, estou aqui para te ajudar.  Com anos de experiência e treinamento constante, posso garantir que você terá a melhor experiência possível. 
-              Meu objetivo é que você saia do meu estúdio não apenas mais bonita, mas também mais confiante.  Cada atendimento é feito com carinho e atenção aos detalhes, porque você merece o melhor.<br><br>
-    
-                Não importa a ocasião, estou aqui para torná-la ainda mais especial.Então, se você deseja uma maquiagem que realce a sua individualidade e destaque a sua beleza única, agende um horário comigo. <br><br>
-              Vamos criar algo incrível juntas!
-              
-          </p>
-          <br>
-
-            <a href="https://wa.me/5561999225658?text=Olá,%20gostaria%20de%20agendar%20um%20horário." class="btnWpp1" target="_blank"> Clique aqui e marque seu horário pelo WhatsApp</a>
-
-      </div>
-      </section>
-          <div class="container" id="content-container">
-              <img src="imgMobile/IMG_2753-Editar.jpg" alt="gmakes" class="imgContainer" id="imagem-luana">
-              <div class="text" id="text">
-                  <h1>Olá, Sou Luana Gomes, a Sua Maquiadora!</h1>
-                  <p>
-                      Se você deseja realçar sua beleza natural e sentir-se poderosa, estou aqui para te ajudar. Com anos de experiência e treinamento constante, posso garantir que você terá a melhor experiência possível.
-                  </p>
-              </div>
-          </div>
-          
-      
-      <section id="carrossel">
-          <div class="imagem-grande">
-              <img src="imgMobile/fotoSandraNova.png" alt="fotoSandraNova">
-              <div class="navegacao">
-              <span class="seta-esquerda" onclick="anteriorImagem()">&#10094;</span>
-              <span class="seta-direita" onclick="proximaImagem()">&#10095;</span>
-          </div>
-          </div>
-          <div class="miniaturas">
-              <h1>Nossas Clientes</h1>
-              <img src="imgMobile/fotonova03.png" alt="foto02" data-imagem="imgMobile/foto02 (2).png">
-              <img src="imgMobile/foto01.png" alt="foto1" data-imagem="imgMobile/foto01.png">
-              
-              
-              <img src="imgMobile/imgLivia02.png" alt="Livia02" data-imagem="imgMobile/foto04.png">
-              <img src="imgMobile/fotoTiaClelia.png" alt="foto06" data-imagem="imgMobile/foto06.png">
-             
-              
-              <img src="imgMobile/fotoLaressa.png" alt="foto10" data-imagem="imgMobile/foto10.png">
-              <img src="imgMobile/Cliente5.png" alt="foto11" data-imagem="imgMobile/foto11.png">
-      
-              <img src="imgMobile/foto03.png" alt="foto03" data-imagem="imgMobile/foto12.png">
-              <img src="imgMobile/foto13.png" alt="foto13" data-imagem="imgMobile/foto13.png">
-      
-          </div>
-      
-      
-      </section>
-      <br><br><br>
-     <section class="servicos-section">
-    <h2 class="tituloh2">Serviços Realizados</h2>
-    <div class="servicos-container">
-        <div class="servico-card">
-            <h3>Maquiagem Social</h3>
-            <p>Produção de beleza para eventos,<br> ensaios fotográficos,  formaturas, <br> madrinhas e convidadas.</p>
-            <ul>
-                <li>Anamnese de gosto pessoal</li>
-                <li>Referências e acessórios</li>
-                <li>Duração: 40 minutos (em média)</li>
-            </ul>
-        </div>
-        <div class="servico-card">
-            <h3>Combo Beauty</h3>
-            <p>Produção de beleza completa com <br>ondas/cachos feitos com babyliss</p>
-            <ul>
-                <li>Realizada em 1h, em média.</li>
-                <li>Cabelo deve estar limpo e seco,<br> pronto para modelar (seguir orientações).</li>
-            </ul>
-        </div>
-        <div class="servico-card">
-            <h3>Combo Glam Beauty</h3>
-            <p>Produção de beleza completa com penteado<br> minimalista
-</p>
-            <ul>
-                <li>Inclui coques simples, rabo de cavalo e<br> semi-preso. </li>
-                <li>Não inclui tranças.</li>
-                <li>Realizada em 1h30, em média.</li>
-                <li>Cabelo deve estar limpo, <br>seguir orientações posteriores.</li>
-            </ul>
-        </div>
-        </div>
+                    <section id="galeria" class="gallery-section">
+    <h2>Transformações e Beleza</h2>
+    <div class="gallery-grid">
+        <img src="imgMobile/fotoSandraNova.png" alt="Cliente com maquiagem elegante">
+        <img src="imgMobile/fotonova03.png" alt="Maquiagem social com destaque nos olhos">
+        <img src="imgMobile/foto01.png" alt="Maquiagem para ensaio fotográfico">
+        <img src="imgMobile/imgLivia02.png" alt="Maquiagem leve e natural">
+        <img src="imgMobile/fotoTiaClelia.png" alt="Maquiagem para idade madura">
+        <img src="imgMobile/fotoLaressa.png" alt="Maquiagem de festa com brilho">
+        <img src="imgMobile/Cliente5.png" alt="Maquiagem suave e sofisticada">
+        <img src="imgMobile/foto13.png" alt="Maquiagem para eventos especiais">
+    </div>
 </section>
-      <section class="avaliacoes-section">
-    <h2 class="tituloh2">Avaliações</h2>
-    <div class="avaliacoes-container">
-        <div class="avaliacao-card">
-            <div class="perfil">
-                <div class="avatar">K</div>
-                <div class="info">
-                    <h4>Karen Rodrigues</h4>
-                    <div class="estrelas">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            <section id="servicos" class="services-section">
+                <h2 class="section-title">Serviços Realizados</h2>
+                <div class="services-container">
+                    <div class="service-card">
+                        <h3>Maquiagem Social</h3>
+                        <p>Produção de beleza para eventos, ensaios fotográficos, formaturas, madrinhas e convidadas.</p>
+                        <ul>
+                            <li>Anamnese de gosto pessoal</li>
+                            <li>Referências e acessórios</li>
+                            <li>Duração: 40 minutos (em média)</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Combo Beauty</h3>
+                        <p>Produção de beleza completa com ondas/cachos feitos com babyliss.</p>
+                        <ul>
+                            <li>Realizada em 1h, em média.</li>
+                            <li>Cabelo deve estar limpo e seco, pronto para modelar (seguir orientações).</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Combo Glam Beauty</h3>
+                        <p>Produção de beleza completa com penteado minimalista.</p>
+                        <ul>
+                            <li>Inclui coques simples, rabo de cavalo e semi-preso.</li>
+                            <li>Não inclui tranças.</li>
+                            <li>Realizada em 1h30, em média.</li>
+                            <li>Cabelo deve estar limpo, seguir orientações posteriores.</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <p>"Maravilhoso!!! Atendimento incrível que se preocupa<br>  com a gente desde quando chegamos até a manutenção da<br> make na festa. Produção que realçou demais minha beleza! <br>Super recomendo!"</p>
-        </div>
+            </section>
 
-        <div class="avaliacao-card">
-            <div class="perfil">
-                <div class="avatar">I</div>
-                <div class="info">
-                    <h4>Isadora Araujo</h4>
-                    <div class="estrelas">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            <section id="avaliacoes" class="testimonials-section">
+                <h2 class="section-title">Avaliações</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <div class="profile">
+                            <div class="avatar">K</div>
+                            <div class="info">
+                                <h4>Karen Rodrigues</h4>
+                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                        </div>
+                        <p>"Maravilhoso!!! Atendimento incrível que se preocupa com a gente desde quando chegamos até a manutenção da make na festa. Produção que realçou demais minha beleza! Super recomendo!"</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="profile">
+                            <div class="avatar">I</div>
+                            <div class="info">
+                                <h4>Isadora Araujo</h4>
+                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                        </div>
+                        <p>"A primeira vez que fiz maquiagem profissional foi com a Luana e eu amei! Super atenciosa, delicada no momento de fazer a maquiagem, além de ter realçado a minha beleza, não ficou nada exagerado! Super indico 😍🥰😘"</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="profile">
+                            <div class="avatar">E</div>
+                            <div class="info">
+                                <h4>Emanuela Krieger</h4>
+                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                        </div>
+                        <p>"Eu amei! A Luana é uma querida e excelente profissional. Respondeu todas minhas dúvidas, me explicou detalhe por detalhe de uma maquiagem completa e estava sempre atenta quando eu estava me maquiando. Parabéns pelo teu trabalho e muito obrigada por toda dedicação"</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="profile">
+                            <div class="avatar">E</div>
+                            <div class="info">
+                                <h4>Erica Costa</h4>
+                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                        </div>
+                        <p>"A Luana é incrível! Extremamente talentosa e cuidadosa, já me maquiou nos eventos e momentos mais importantes da minha vida! O resultado é sempre impecável, me rendendo muitos elogios. Sem contar que arrasa muito nos penteados e o curso de automaquiagem é um show a parte! Não largo mais! 😍"</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="profile">
+                            <div class="avatar">M</div>
+                            <div class="info">
+                                <h4>Marina Moreira</h4>
+                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                        </div>
+                        <p>"Fiz a maquiagem com a Luana e gostei muito! O trabalho dela é bem natural! Já fiz makes com outras maquiadoras que não acertavam no tom da base, me deixavam amarelada. Mas, a Luana acertou de primeira. E ela é bem rápida também!"</p>
                     </div>
                 </div>
-            </div>
-            <p>"A primeira vez que fiz maquiagem profissional <br>foi com a Luana e eu amei! Super atenciosa,<br> delicada no momento de fazer a maquiagem, <br>além de ter realçado a minha beleza, <br>não ficou nada exagerado! Super indico 😍🥰😘"</p>
-        </div>
-
-        <div class="avaliacao-card">
-            <div class="perfil">
-                <div class="avatar">E</div>
-                <div class="info">
-                    <h4>Emanuela Krieger</h4>
-                    <div class="estrelas">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </section>
+            
+            <section id="contato" class="contact-section">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-content-wrapper">
+                    <div class="contact-form-card">
+                        <h3><span class="material-symbols-outlined">mail</span> Formulário de Contato</h3>
+                        <form id="whatsappForm">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                            
+                            <label for="phone">Número de Telefone:</label>
+                            <input type="text" id="phone" name="phone" required autocomplete="tel-national">
+                            
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" required placeholder="Gostaria de agendar uma maquiagem para..."></textarea>
+                            
+                            <button type="submit">Enviar para o WhatsApp</button>
+                        </form>
                     </div>
-                </div>
-            </div>
-            <p>"Eu amei! A Luana é uma querida e excelente profissional. <br>Respondeu todas minhas dúvidas, me explicou<br> detalhe por detalhe de uma maquiagem completa e estava <br> sempre atenta quando eu estava me maquiando. <br>Parabéns pelo teu trabalho e <br>muito obrigada por toda dedicação"</p>
-        </div>
-
-        <div class="avaliacao-card">
-            <div class="perfil">
-                <div class="avatar">E</div>
-                <div class="info">
-                    <h4>Erica Costa</h4>
-                    <div class="estrelas">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                    </div>
-                </div>
-            </div>
-            <p>"A Luana é incrível! Extremamente talentosa e cuidadosa, <br>já me maquiou nos eventos e momentos mais importantes <br>da minha vida! O resultado é sempre impecável, me <br>rendendo muitos elogios. Sem contar que arrasa muito<br> nos penteados e o  curso de automaquiagem é um show<br> a parte!  Não largo mais! 😍"</p>
-        </div>
-
-        <div class="avaliacao-card">
-            <div class="perfil">
-                <div class="avatar">M</div>
-                <div class="info">
-                    <h4>Marina Moreira</h4>
-                    <div class="estrelas">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                    </div>
-                </div>
-            </div>
-            <p>"Fiz a maquiagem com a Luana e gostei muito!<br> O trabalho dela é bem natural! Já fiz makes com outras <br>maquiadoras que  não acertavam no tom da base,<br> me deixavam amarelada. Mas, a Luana acertou de primeira.<br> E ela é bem rápida também!"</p>
-        </div>
-
-        </div>
-</section>
                 
-                <h1 class="tituloContato">Contato</h1>
-      <section id="contato">
-          
-              <div class="q1">
-                  <form id="whatsappForm">
-                    <h1><span class="material-symbols-outlined">
-                        mail
-                        </span> Formulário de Contato</h1><br>
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required autocomplete="name">
-                  <br>
-                    <label for="phone">Número de Telefone:</label>
-                    <input type="text" id="phone" name="phone" required autocomplete="tel-national">
-                  <br>
-                    <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" required></textarea>
-                  <br>
-                    <button type="submit" target="_blank" rel="noopener">Enviar para o WhatsApp</button>
-                  
-                    </form>
-              </div>
+                    <div class="contact-info-card">
+                        <h3><span class="material-symbols-outlined">call</span> Informações de Contato</h3>
+                        <p><strong>Telefone:</strong> <a href="tel:+5561999225658">+55 61 99922-5658</a></p>
+                        <p><strong>E-mail:</strong> <a href="mailto:luana.gomes0820@gmail.com">luana.gomes0820@gmail.com</a></p>
+                        <p><strong>Site Oficial:</strong> <a href="http://www.luanagbeauty.web.app" target="_blank" rel="noopener">www.luanagbeauty.web.app</a></p>
+                        
+                        <h4>Siga nossas redes:</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/luanagbeauty.co/" target="_blank" rel="noopener"><img src="imgMobile/121.png" alt="Instagram Luana Gomes Beauty & Co."></a>
+                            <a href="https://www.tiktok.com/@luanagbeauty" target="_blank" rel="noopener"><img src="imgMobile/iconetik.png" alt="TikTok Luana Gomes Beauty"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> 
+
+        <footer>
+            <div class="footer-logo">
+                <span class="material-symbols-outlined">star</span>
+                <h1>Luana Gomes</h1>
+            </div>
+            <p class="desktop-footer-text">Maquiadora Profissional | Luana Gomes | Atendimento a domicílio.</p>
+            <p class="mobile-footer-text">Maquiadora Profissional <br> Atendimento a domicílio.</p>
+        </footer>
+
+        <a href="https://wa.me/5561998817667" target="_blank" class="whatsapp-float-button" aria-label="Fale conosco pelo WhatsApp">
+            <img src="imgMobile/whatsapp.png" alt="Ícone WhatsApp">
+        </a>
         
-            <div class="q2">
-                <h1><span class="material-symbols-outlined">
-                        call
-                </span> Informações de contato</h1>
-                
-                <strong>Telefone:</strong> <a href="tel:+5561999225658">+55 61 99922-5658</a>        <br> <br>
-                <strong>E-mail:</strong> <a href="mailto:luana.gomes0820@gmail.com">luana.gomes0820@gmail.com</a>
-                <br><br>
-                <strong>Site Oficial:</strong> <a href="http://www.luanagbeauty.web.app" target="_blank" rel="noopener">www.luanagbeauty.web.app</a>
-                <br><br><br>
-                <h2>Siga nossas redes:</h2>
-                
-                <span>
-                    <a href="https://www.instagram.com/luanagbeauty.co/" target="_blank" rel="noopener"><img src="imgMobile/121.png" alt="logo" class="img1"></a>
-                    <a href="https://www.tiktok.com/@luanagbeauty" target="_blank" rel="noopener"><img src="imgMobile/iconetik.png" alt="logo" class="img1" id="loc"></a>
-                </span>
-            </div>
-    
-      
-      </section>
-      
-    
-      <footer>
-          <span class="box">
-              <span class="material-symbols-outlined">
-                  brightness_3brightness_2brightness_1nightlight<span id="ultimalua" class="material-symbols-outlined rotated-icon">brightness_3
-                  </span>
-              </span>
-          <h1>Luana Gomes</h1>
-          </span>
-          <span class="box2">
-              <p> Maquiadora Profissional I Luana Gomes I Atendimento a domicílio.
-                  </p>
-          </span>
-          <span class="boxMobile">
-            <p>Maquiadora Profissional  <br> Atendimento a domicílio. </p>
-          </span>
-      
-      </footer>
-        <a href="https://wa.me/5561998817667" target="_blank" class="botao-wpp-flutuante">
-        <img src="imgMobile/whatsapp.png" alt="Ícone WhatsApp" class="botao-wpp-flutuanteIMG"></a>
-      
-      <article>
-        <a href="#container" class="forTopo">VOLTE AO TOPO</a>
-      </article>
-      
-      </main> 
-        </div>
-      <script type="module" src="index.js"></script>
-      <script type="module" src="trocas.js"></script>
-      <script type="module" src="carrosel.js"></script>
-      <script type="module" src="formulario.js"></script>
-      <script type="module" src="carousel.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script type="module" src="header(rolagem).js"></script>
-      
-      
-      
-        
+        <a href="#container" class="back-to-top" aria-label="Voltar ao topo da página">
+            <span class="material-symbols-outlined">arrow_upward</span>
+        </a>
+    </div>
 
-
-  
-  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="index.js"></script>
+   <script type="module" src="index3.js"></script>
+   
 </body>
 </html>
