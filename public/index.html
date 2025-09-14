@@ -1,435 +1,431 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luana Gomes Beauty & Co.</title>
-    <link rel="shortcut icon" href="imgMobile/favicon.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="mediacel.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luana Gomes Beauty & Co.</title>
+  <link rel="shortcut icon" href="imgMobile/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="mediacel.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body> 
-    <div id="container">
-        <header>
-            <a href="#hero" class="logo">
-                <h1>Luana Gomes</h1>
-                <h2 class="subtitulo">Beauty & Co.</h2>
-            </a>
-            <nav class="MenuNav">
-                <a href="#sobre">Sobre</a>
-                <a href="#galeria">Fotos</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#avaliacoes">Avaliações</a>
-                <a href="#contato">Contato</a>
-            </nav>
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <span class="material-symbols-outlined">menu</span>
+<body>
+  <div id="container">
+    <header>
+      <a href="#hero" class="logo">
+        <h1>Luana Gomes</h1>
+        <h2 class="subtitulo">Beauty & Co.</h2>
+      </a>
+      <nav class="MenuNav">
+        <a href="#sobre">Sobre</a>
+        <div class="nav-item dropdown">
+          <a href="#galeria" class="dropbtn">Fotos ▾</a>
+          <div class="dropdown-content">
+            <a href="noivas.html">Noivas</a>
+            <a href="galeriaEnsaio.html">Ensaio fotográfico</a>
+            <a href="galeriacasamento.html">Casamento</a>
+            <a href="galeriabelezatodasidades.html">Beleza em todas as idades</a>
+            <a href="#galeria‑eventos">Eventos especiais</a>
+            <a href="#galeria‑batizado">Batizado</a>
+          </div>
+        </div>
+        <a href="#servicos">Serviços</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </header>
+
+    <main>
+
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1>Realce sua beleza única</h1>
+          <p>Produção completa para todos os seus momentos especiais.</p>
+      <form id="contactHeroForm">
+        <label for="hero_name">Nome:</label>
+        <input type="text" id="hero_name" name="name" required>
+        <label for="hero_phone">Telefone:</label>
+        <input type="text" id="hero_phone" name="phone" required>
+        <label for="hero_message">Mensagem:</label>
+        <textarea id="hero_message" name="message" required placeholder="Gostaria de agendar uma maquiagem para..."></textarea>
+        <button type="submit" class="btn-cta">Enviar</button>
+      </form>
+        </div>
+        <div class="hero-image-carousel">
+          <img src="imgMobile/noiva01.JPG" alt="Maquiagem profissional Luana Gomes" class="active">
+          <img src="imgMobile/fotonovaMOBILE.png" alt="Cliente maquiada por Luana Gomes">
+          <img src="imgMobile/fotonova03.png" alt="Detalhe de maquiagem artística">
+          <img src="imgMobile/noivaErica1.JPG" alt="Maquiagem para festa">
+          <img src="imgMobile/imgLivia01.png" alt="Maquiagem natural">
+          <img src="imgMobile/noiva01.JPG" alt="Maquiagem de noiva">
+        </div>
+      </section>
+
+      <section id="sobre" class="about-section">
+        <div class="about-image">
+          <img src="imgMobile/IMG_2753-Editar.jpg" alt="Luana Gomes Maquiadora">
+        </div>
+        <div class="about-text">
+          <h2>Olá, Sou Luana Gomes!</h2>
+          <p>Se você deseja realçar sua beleza de forma natural, estou aqui para te ajudar. Com anos de experiência e
+            treinamento constante, posso garantir que você terá a melhor experiência possível. Meu objetivo é que você
+            se olhe no espelho e encontre a sua melhor versão. Não apenas mais bonita, mas também mais confiante. Cada
+            atendimento é feito com carinho e atenção aos detalhes porque você merece o melhor.
+          </p>
+          <p>Madrinhas, noivas, aniversariantes, debutantes, batizados, ensaios fotográficos... não importa a ocasião,
+            estou aqui para torná-la ainda mais especial. Então, se você deseja uma produção completa que realce a sua
+            individualidade e destaque a sua beleza única, agende o seu horário comigo agora. </p>
+          <p>Vamos construir beleza juntas!</p>
+          <a href="https://wa.me/5561999225658?text=Olá,%20gostaria%20de%20agendar%20um%20horário." class="btn-cta"
+            target="_blank">Marque seu Horário pelo WhatsApp</a>
+        </div>
+      </section>
+      <!-- ======= GALERIA (moderna + confiável) ======= -->
+      <section id="galeria" class="gallery-section">
+        <div class="gallery-header">
+          <h2>Transformações & Beleza</h2>
+          <p class="subtitle">Trabalhos reais • Profissionalismo • Resultado que inspira confiança</p>
+        </div>
+
+        <div class="gallery-grid" aria-live="polite">
+          <!-- Cada card -->
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="0" aria-label="Ampliar: Maquiagem elegante">
+              <img src="imgMobile/fotoSandraNova.png" alt="Cliente com maquiagem elegante" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Maquiagem elegante</figcaption>
             </button>
-        </header>
+          </figure>
 
-        <main>
-            <section id="hero" class="hero-section">
-                <div class="hero-content">
-                    <h1>Realce sua beleza única</h1>
-                    <p>Maquiagem profissional para todos os seus momentos especiais.</p>
-                    <a href="https://wa.me/5561999225658?text=Olá,%20gostaria%20de%20agendar%20um%20horário." class="btn-cta" target="_blank">Agende seu Horário</a>
-                </div>
-                <div class="hero-image-carousel">
-                    <img src="imgMobile/noiva01.JPG" alt="Maquiagem profissional Luana Gomes" class="active">
-                    <img src="imgMobile/fotonovaMOBILE.png" alt="Cliente maquiada por Luana Gomes">
-                    <img src="imgMobile/fotonova03.png" alt="Detalhe de maquiagem artística">
-                    <img src="imgMobile/noivaErica1.JPG" alt="Maquiagem para festa">
-                    <img src="imgMobile/imgLivia01.png" alt="Maquiagem natural">
-                    <img src="imgMobile/noiva01.JPG" alt="Maquiagem de noiva">
-                </div>
-            </section>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="1" aria-label="Ampliar: Social com foco nos olhos">
+              <img src="imgMobile/fotonova03.png" alt="Maquiagem social com destaque nos olhos" loading="lazy"
+                width="640" height="800" />
+              <figcaption>Social • Olhos em destaque</figcaption>
+            </button>
+          </figure>
 
-            <section id="sobre" class="about-section">
-                <div class="about-image">
-                    <img src="imgMobile/IMG_2753-Editar.jpg" alt="Luana Gomes Maquiadora">
-                </div>
-                <div class="about-text">
-                    <h2>Olá, Sou Luana Gomes!</h2>
-                    <p>Se você deseja realçar sua beleza de forma natural, estou aqui para te ajudar. Com anos de experiência e treinamento constante, posso garantir que você terá a melhor experiência possível. Meu objetivo é que você se olhe no espelho e encontre a sua melhor versão. Não apenas mais bonita, mas também mais confiante. Cada atendimento é feito com carinho e atenção aos detalhes porque você merece o melhor.
-                    </p>
-                    <p>Madrinhas, noivas, aniversariantes, debutantes, batizados, ensaios fotográficos... não importa a ocasião, estou aqui para torná-la ainda mais especial. Então, se você deseja uma produção completa que realce a sua individualidade e destaque a sua beleza única, agende o seu horário comigo agora.  </p>
-                   <p>Vamos construir beleza juntas!</p>
-                    <a href="https://wa.me/5561999225658?text=Olá,%20gostaria%20de%20agendar%20um%20horário." class="btn-cta" target="_blank">Marque seu Horário pelo WhatsApp</a>
-                </div>
-            </section>
-<!-- ======= GALERIA (moderna + confiável) ======= -->
-<section id="galeria" class="gallery-section">
-  <div class="gallery-header">
-    <h2>Transformações & Beleza</h2>
-    <p class="subtitle">Trabalhos reais • Profissionalismo • Resultado que inspira confiança</p>
-  </div>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="2" aria-label="Ampliar: Ensaio fotográfico">
+              <img src="imgMobile/foto01.png" alt="Maquiagem para ensaio fotográfico" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Ensaio fotográfico</figcaption>
+            </button>
+          </figure>
 
-  <div class="gallery-grid" aria-live="polite">
-    <!-- Cada card -->
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="0" aria-label="Ampliar: Maquiagem elegante">
-        <img
-          src="imgMobile/fotoSandraNova.png"
-          alt="Cliente com maquiagem elegante"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Maquiagem elegante</figcaption>
-      </button>
-    </figure>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="3" aria-label="Ampliar: Leve e natural">
+              <img src="imgMobile/fotonova04.jpg" alt="Maquiagem leve e natural" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Leve & natural</figcaption>
+            </button>
+          </figure>
 
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="1" aria-label="Ampliar: Social com foco nos olhos">
-        <img
-          src="imgMobile/fotonova03.png"
-          alt="Maquiagem social com destaque nos olhos"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Social • Olhos em destaque</figcaption>
-      </button>
-    </figure>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="4" aria-label="Ampliar: Idade madura">
+              <img src="imgMobile/fotoTiaClelia.png" alt="Maquiagem para idade madura" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Beleza em todas as idades</figcaption>
+            </button>
+          </figure>
 
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="2" aria-label="Ampliar: Ensaio fotográfico">
-        <img
-          src="imgMobile/foto01.png"
-          alt="Maquiagem para ensaio fotográfico"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Ensaio fotográfico</figcaption>
-      </button>
-    </figure>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="5" aria-label="Ampliar: Festa com brilho">
+              <img src="imgMobile/fotoLaressa.png" alt="Maquiagem de festa com brilho" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Festa com brilho</figcaption>
+            </button>
+          </figure>
 
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="3" aria-label="Ampliar: Leve e natural">
-        <img
-          src="imgMobile/fotonova04.jpg"
-          alt="Maquiagem leve e natural"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Leve & natural</figcaption>
-      </button>
-    </figure>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="6" aria-label="Ampliar: Suave e sofisticada">
+              <img src="imgMobile/Cliente5.png" alt="Maquiagem suave e sofisticada" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Suave & sofisticada</figcaption>
+            </button>
+          </figure>
 
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="4" aria-label="Ampliar: Idade madura">
-        <img
-          src="imgMobile/fotoTiaClelia.png"
-          alt="Maquiagem para idade madura"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Beleza em todas as idades</figcaption>
-      </button>
-    </figure>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
+              <img src="imgMobile/fotosandra2.png" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Eventos especiais</figcaption>
+            </button>
+          </figure>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
+              <img src="imgMobile/fotonovaMOBILE2.png" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Eventos especiais</figcaption>
+            </button>
+          </figure>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
+              <img src="imgMobile/fotonovaMOBILE.png" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Eventos especiais</figcaption>
+            </button>
+          </figure>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
+              <img src="imgMobile/fotonova1.png" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Eventos especiais</figcaption>
+            </button>
+          </figure>
+          <figure class="gallery-card">
+            <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
+              <img src="imgMobile/fotonova2.png" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
+                height="800" />
+              <figcaption>Eventos especiais</figcaption>
+            </button>
+          </figure>
 
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="5" aria-label="Ampliar: Festa com brilho">
-        <img
-          src="imgMobile/fotoLaressa.png"
-          alt="Maquiagem de festa com brilho"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Festa com brilho</figcaption>
-      </button>
-    </figure>
+        </div>
+      </section>
 
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="6" aria-label="Ampliar: Suave e sofisticada">
-        <img
-          src="imgMobile/Cliente5.png"
-          alt="Maquiagem suave e sofisticada"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Suave & sofisticada</figcaption>
-      </button>
-    </figure>
-
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-        <img
-          src="imgMobile/fotosandra2.png"
-          alt="Maquiagem para eventos especiais"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Eventos especiais</figcaption>
-      </button>
-    </figure>
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-        <img
-          src="imgMobile/fotonovaMOBILE2.png"
-          alt="Maquiagem para eventos especiais"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Eventos especiais</figcaption>
-      </button>
-    </figure>
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-        <img
-          src="imgMobile/fotonovaMOBILE.png"
-          alt="Maquiagem para eventos especiais"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Eventos especiais</figcaption>
-      </button>
-    </figure>
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-        <img
-          src="imgMobile/fotonova1.png"
-          alt="Maquiagem para eventos especiais"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Eventos especiais</figcaption>
-      </button>
-    </figure>
-    <figure class="gallery-card">
-      <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-        <img
-          src="imgMobile/fotonova2.png"
-          alt="Maquiagem para eventos especiais"
-          loading="lazy"
-          width="640" height="800"
-        />
-        <figcaption>Eventos especiais</figcaption>
-      </button>
-    </figure>
-    
-  </div>
-</section>
-
-<!-- ======= LIGHTBOX ======= -->
-<div class="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagens" hidden>
-  <button class="lb-close" aria-label="Fechar (Esc)">✕</button>
-  <button class="lb-prev" aria-label="Imagem anterior">‹</button>
-  <figure class="lb-figure">
-    <img class="lb-image" alt="" />
-    <figcaption class="lb-caption"></figcaption>
-  </figure>
-  <button class="lb-next" aria-label="Próxima imagem">›</button>
-</div>
-
-<section id="servicos" class="services-section">
-  <h2 class="section-title">Serviços Realizados</h2>
-
-  <div class="services-container">
-    <div class="service-card">
-      <h3>Maquiagem Social</h3>
-      <p>Produção de beleza para eventos, ensaios fotográficos, formaturas, madrinhas e convidadas.</p>
-      <ul>
-        <li>Anamnese de gosto pessoal</li>
-        <li>Referências e acessórios</li>
-        <li>Duração: 40 minutos (em média)</li>
-      </ul>
-      <a class="btn-whatsapp"
-         href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20informações%20sobre%20Maquiagem%20Social."
-         aria-label="Falar no WhatsApp sobre Maquiagem Social" target="_blank">
-        <img src="imgMobile/whatsapp.png" alt="" width="18" height="18" loading="lazy">
-        <span>Falar no WhatsApp</span>
-      </a>
-    </div>
-
-    <div class="service-card">
-      <h3>Combo Beauty</h3>
-      <p>Produção de beleza completa com ondas/cachos feitos com babyliss.</p>
-      <ul>
-        <li>Realizada em 1h, em média.</li>
-        <li>Cabelo deve estar limpo e seco, pronto para modelar (seguir orientações).</li>
-      </ul>
-      <a class="btn-whatsapp"
-         href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20informações%20sobre%20Combo%20Beauty."
-         aria-label="Falar no WhatsApp sobre Combo Beauty" target="_blank" >
-        <img src="imgMobile/whatsapp.png" alt="" width="18" height="18" loading="lazy">
-        <span>Falar no WhatsApp</span>
-      </a>
-    </div>
-
-    <div class="service-card">
-      <h3>Combo Glam Beauty</h3>
-      <p>Produção de beleza completa com penteado minimalista.</p>
-      <ul>
-        <li>Inclui coques simples, rabo de cavalo e semi-preso.</li>
-        <li>Não inclui tranças.</li>
-        <li>Realizada em 1h30, em média.</li>
-        <li>Cabelo deve estar limpo, seguir orientações posteriores.</li>
-      </ul>
-      <a class="btn-whatsapp"
-         href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20informações%20sobre%20Combo%20Glam%20Beauty."
-         aria-label="Falar no WhatsApp sobre Combo Glam Beauty" target="_blank">
-        <img src="imgMobile/whatsapp.png" alt="" width="18" height="18" loading="lazy">
-        <span>Falar no WhatsApp</span>
-      </a>
-    </div>
-
-    <!-- NOVO CARD -->
-    <div class="service-card highlight">
-      <h3>Curso de Auto-Maquiagem</h3>
-      <p>Aprenda técnicas para realçar sua beleza no dia a dia e em eventos.</p>
-      <ul>
-        <li>Higiene, preparação de pele e seleção de produtos</li>
-        <li>Correções, contorno, iluminação e selagem</li>
-        <li>Olhos (dia/noite), sobrancelha e finalização</li>
-        <li>Duração: 1h30 (individual) • 2h00 (dupla) • 2h30 (trio)</li>
-      </ul>
-      <div class="cta-group">
-        <a class="btn-whatsapp"
-           href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20informações%20sobre%20o%20Curso%20de%20Auto%20Maquiagem%20individual."
-           aria-label="WhatsApp Curso Auto-Maquiagem individual" target="_blank">
-          <img src="imgMobile/whatsapp.png" alt="" loading="lazy">
-          <span>Individual</span>
-        </a>
-        <a class="btn-outline"
-           href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20informações%20sobre%20o%20Curso%20de%20Auto%20Maquiagem%20em%20dupla."
-           aria-label="WhatsApp Curso Auto-Maquiagem em dupla" target="_blank">
-          <img src="imgMobile/whatsapp.png" alt=""  loading="lazy">
-          <span>Dupla</span>
-        </a>
-        <a class="btn-outline"
-           href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20informações%20sobre%20o%20Curso%20de%20Auto%20Maquiagem%20em%20trio."
-           aria-label="WhatsApp Curso Auto-Maquiagem em dupla" target="_blank">
-          <img src="imgMobile/whatsapp.png" alt="" loading="lazy">
-          <span>Trio</span>
-        </a>
+      <!-- ======= LIGHTBOX ======= -->
+      <div class="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagens" hidden>
+        <button class="lb-close" aria-label="Fechar (Esc)">✕</button>
+        <button class="lb-prev" aria-label="Imagem anterior">‹</button>
+        <figure class="lb-figure">
+          <img class="lb-image" alt="" />
+          <figcaption class="lb-caption"></figcaption>
+        </figure>
+        <button class="lb-next" aria-label="Próxima imagem">›</button>
       </div>
-    </div>
-  </div>
-</section>
-            <section id="avaliacoes" class="testimonials-section">
-                <h2 class="section-title">Avaliações</h2>
-                <div class="testimonials-container">
-                    <div class="testimonial-card">
-                        <div class="profile">
-                            <div class="avatar">K</div>
-                            <div class="info">
-                                <h4>Karen Rodrigues</h4>
-                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                        </div>
-                        <p>"Maravilhoso!!! Atendimento incrível que se preocupa com a gente desde quando chegamos até a manutenção da make na festa. Produção que realçou demais minha beleza! Super recomendo!"</p>
-                    </div>
 
-                    <div class="testimonial-card">
-                        <div class="profile">
-                            <div class="avatar">I</div>
-                            <div class="info">
-                                <h4>Isadora Araujo</h4>
-                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                        </div>
-                        <p>"A primeira vez que fiz maquiagem profissional foi com a Luana e eu amei! Super atenciosa, delicada no momento de fazer a maquiagem, além de ter realçado a minha beleza, não ficou nada exagerado! Super indico 😍🥰😘"</p>
-                    </div>
+      <section id="servicos" class="services-section">
+        <h2 class="section-title">Serviços Realizados</h2>
 
-                    <div class="testimonial-card">
-                        <div class="profile">
-                            <div class="avatar">E</div>
-                            <div class="info">
-                                <h4>Emanuela Krieger</h4>
-                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                        </div>
-                        <p>"Eu amei! A Luana é uma querida e excelente profissional. Respondeu todas minhas dúvidas, me explicou detalhe por detalhe de uma maquiagem completa e estava sempre atenta quando eu estava me maquiando. Parabéns pelo teu trabalho e muito obrigada por toda dedicação"</p>
-                    </div>
+        <div class="services-container">
+          <div class="service-card">
+            <h3>Maquiagem Social</h3>
+            <p>Produção de beleza para eventos, ensaios fotográficos, formaturas, madrinhas e convidadas.</p>
+            <ul>
+              <li>Anamnese de gosto pessoal</li>
+              <li>Referências e acessórios</li>
+              <li>Duração: 40 minutos (em média)</li>
+            </ul>
+            <a class="btn-whatsapp"
+              href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20informações%20sobre%20Maquiagem%20Social."
+              aria-label="Falar no WhatsApp sobre Maquiagem Social" target="_blank">
+              <img src="imgMobile/whatsapp.png" alt="" width="18" height="18" loading="lazy">
+              <span>Falar no WhatsApp</span>
+            </a>
+          </div>
 
-                    <div class="testimonial-card">
-                        <div class="profile">
-                            <div class="avatar">E</div>
-                            <div class="info">
-                                <h4>Erica Costa</h4>
-                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                        </div>
-                        <p>"A Luana é incrível! Extremamente talentosa e cuidadosa, já me maquiou nos eventos e momentos mais importantes da minha vida! O resultado é sempre impecável, me rendendo muitos elogios. Sem contar que arrasa muito nos penteados e o curso de automaquiagem é um show a parte! Não largo mais! 😍"</p>
-                    </div>
+          <div class="service-card">
+            <h3>Combo Beauty</h3>
+            <p>Produção de beleza completa com ondas/cachos feitos com babyliss.</p>
+            <ul>
+              <li>Realizada em 1h, em média.</li>
+              <li>Cabelo deve estar limpo e seco, pronto para modelar (seguir orientações).</li>
+            </ul>
+            <a class="btn-whatsapp"
+              href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20informações%20sobre%20Combo%20Beauty."
+              aria-label="Falar no WhatsApp sobre Combo Beauty" target="_blank">
+              <img src="imgMobile/whatsapp.png" alt="" width="18" height="18" loading="lazy">
+              <span>Falar no WhatsApp</span>
+            </a>
+          </div>
 
-                    <div class="testimonial-card">
-                        <div class="profile">
-                            <div class="avatar">M</div>
-                            <div class="info">
-                                <h4>Marina Moreira</h4>
-                                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                        </div>
-                        <p>"Fiz a maquiagem com a Luana e gostei muito! O trabalho dela é bem natural! Já fiz makes com outras maquiadoras que não acertavam no tom da base, me deixavam amarelada. Mas, a Luana acertou de primeira. E ela é bem rápida também!"</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="contato" class="contact-section">
-                <h2 class="section-title">Entre em Contato</h2>
-                <div class="contact-content-wrapper">
-                    <div class="contact-form-card">
-                        <h3><span class="material-symbols-outlined">mail</span> Formulário de Contato</h3>
-                        <form id="whatsappForm">
-                            <label for="name">Nome:</label>
-                            <input type="text" id="name" name="name" required autocomplete="name">
-                            
-                            <label for="phone">Número de Telefone:</label>
-                            <input type="text" id="phone" name="phone" required autocomplete="tel-national">
-                            
-                            <label for="message">Mensagem:</label>
-                            <textarea id="message" name="message" required placeholder="Gostaria de agendar uma maquiagem para..."></textarea>
-                            
-                            <button type="submit">Enviar para o WhatsApp</button>
-                        </form>
-                    </div>
-                
-                    <div class="contact-info-card">
-                        <h3><span class="material-symbols-outlined">call</span> Informações de Contato</h3>
-                        <p><strong>Telefone:</strong> <a href="tel:+5561999225658">+55 61 99922-5658</a></p>
-                        <p><strong>E-mail:</strong> <a href="mailto:luana.gomes0820@gmail.com">luana.gomes0820@gmail.com</a></p>
-                        <p><strong>Site Oficial:</strong> <a href="http://www.luanagbeauty.web.app" target="_blank" rel="noopener">www.luanagbeauty.web.app</a></p>
-                        
-                        <h4>Siga nossas redes:</h4>
-                        <div class="social-icons">
-                            <a href="https://www.instagram.com/luanagbeauty.co/" target="_blank" rel="noopener"><img src="imgMobile/121.png" alt="Instagram Luana Gomes Beauty & Co."></a>
-                            <a href="https://www.tiktok.com/@luanagbeauty" target="_blank" rel="noopener"><img src="imgMobile/iconetik.png" alt="TikTok Luana Gomes Beauty"></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main> 
+          <div class="service-card">
+            <h3>Combo Glam Beauty</h3>
+            <p>Produção de beleza completa com penteado minimalista.</p>
+            <ul>
+              <li>Inclui coques simples, rabo de cavalo e semi-preso.</li>
+              <li>Não inclui tranças.</li>
+              <li>Realizada em 1h30, em média.</li>
+              <li>Cabelo deve estar limpo, seguir orientações posteriores.</li>
+            </ul>
+            <a class="btn-whatsapp"
+              href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20informações%20sobre%20Combo%20Glam%20Beauty."
+              aria-label="Falar no WhatsApp sobre Combo Glam Beauty" target="_blank">
+              <img src="imgMobile/whatsapp.png" alt="" width="18" height="18" loading="lazy">
+              <span>Falar no WhatsApp</span>
+            </a>
+          </div>
 
-        <footer>
-            <div class="footer-logo">
-                <span class="material-symbols-outlined">star</span>
-                <h1>Luana Gomes</h1>
+          <!-- NOVO CARD -->
+          <div class="service-card highlight">
+            <h3>Curso de Auto-Maquiagem</h3>
+            <p>Aprenda técnicas para realçar sua beleza no dia a dia e em eventos.</p>
+            <ul>
+              <li>Higiene, preparação de pele e seleção de produtos</li>
+              <li>Correções, contorno, iluminação e selagem</li>
+              <li>Olhos (dia/noite), sobrancelha e finalização</li>
+              <li>Duração: 1h30 (individual) • 2h00 (dupla) • 2h30 (trio)</li>
+            </ul>
+            <div class="cta-group">
+              <a class="btn-whatsapp"
+                href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20informações%20sobre%20o%20Curso%20de%20Auto%20Maquiagem%20individual."
+                aria-label="WhatsApp Curso Auto-Maquiagem individual" target="_blank">
+                <img src="imgMobile/whatsapp.png" alt="" loading="lazy">
+                <span>Individual</span>
+              </a>
+              <a class="btn-outline"
+                href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20informações%20sobre%20o%20Curso%20de%20Auto%20Maquiagem%20em%20dupla."
+                aria-label="WhatsApp Curso Auto-Maquiagem em dupla" target="_blank">
+                <img src="imgMobile/whatsapp.png" alt="" loading="lazy">
+                <span>Dupla</span>
+              </a>
+              <a class="btn-outline"
+                href="https://wa.me/556199225658?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20informações%20sobre%20o%20Curso%20de%20Auto%20Maquiagem%20em%20trio."
+                aria-label="WhatsApp Curso Auto-Maquiagem em dupla" target="_blank">
+                <img src="imgMobile/whatsapp.png" alt="" loading="lazy">
+                <span>Trio</span>
+              </a>
             </div>
-            <p class="desktop-footer-text">Maquiadora Profissional | Luana Gomes | Atendimento a domicílio.</p>
-            <p class="mobile-footer-text">Maquiadora Profissional <br> Atendimento a domicílio.</p>
-        </footer>
+          </div>
+        </div>
+      </section>
+      <section id="avaliacoes" class="testimonials-section">
+        <h2 class="section-title">Avaliações</h2>
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <div class="profile">
+              <div class="avatar">K</div>
+              <div class="info">
+                <h4>Karen Rodrigues</h4>
+                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+            </div>
+            <p>"Maravilhoso!!! Atendimento incrível que se preocupa com a gente desde quando chegamos até a manutenção
+              da make na festa. Produção que realçou demais minha beleza! Super recomendo!"</p>
+          </div>
 
-        <a href="https://wa.me/556199225658" target="_blank" class="whatsapp-float-button" aria-label="Fale conosco pelo WhatsApp">
-            <img src="imgMobile/whatsapp.png" alt="Ícone WhatsApp">
-        </a>
-        
-        <a href="#container" class="back-to-top" aria-label="Voltar ao topo da página">
-            <span class="material-symbols-outlined">arrow_upward</span>
-        </a>
-    </div>
+          <div class="testimonial-card">
+            <div class="profile">
+              <div class="avatar">I</div>
+              <div class="info">
+                <h4>Isadora Araujo</h4>
+                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+            </div>
+            <p>"A primeira vez que fiz maquiagem profissional foi com a Luana e eu amei! Super atenciosa, delicada no
+              momento de fazer a maquiagem, além de ter realçado a minha beleza, não ficou nada exagerado! Super indico
+              😍🥰😘"</p>
+          </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="module" src="index.js"></script>
-   <script type="module" src="index3.js"></script>
-   
+          <div class="testimonial-card">
+            <div class="profile">
+              <div class="avatar">E</div>
+              <div class="info">
+                <h4>Emanuela Krieger</h4>
+                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+            </div>
+            <p>"Eu amei! A Luana é uma querida e excelente profissional. Respondeu todas minhas dúvidas, me explicou
+              detalhe por detalhe de uma maquiagem completa e estava sempre atenta quando eu estava me maquiando.
+              Parabéns pelo teu trabalho e muito obrigada por toda dedicação"</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="profile">
+              <div class="avatar">E</div>
+              <div class="info">
+                <h4>Erica Costa</h4>
+                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+            </div>
+            <p>"A Luana é incrível! Extremamente talentosa e cuidadosa, já me maquiou nos eventos e momentos mais
+              importantes da minha vida! O resultado é sempre impecável, me rendendo muitos elogios. Sem contar que
+              arrasa muito nos penteados e o curso de automaquiagem é um show a parte! Não largo mais! 😍"</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="profile">
+              <div class="avatar">M</div>
+              <div class="info">
+                <h4>Marina Moreira</h4>
+                <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+            </div>
+            <p>"Fiz a maquiagem com a Luana e gostei muito! O trabalho dela é bem natural! Já fiz makes com outras
+              maquiadoras que não acertavam no tom da base, me deixavam amarelada. Mas, a Luana acertou de primeira. E
+              ela é bem rápida também!"</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact-section">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-content-wrapper">
+          <div class="contact-form-card">
+            <h3><span class="material-symbols-outlined">mail</span> Formulário de Contato</h3>
+            <form id="whatsappForm">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+
+              <label for="phone">Número de Telefone:</label>
+              <input type="text" id="phone" name="phone" required autocomplete="tel-national">
+
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" required
+                placeholder="Gostaria de agendar uma maquiagem para..."></textarea>
+
+              <button type="submit">Enviar para o WhatsApp</button>
+            </form>
+          </div>
+
+          <div class="contact-info-card">
+            <h3><span class="material-symbols-outlined">call</span> Informações de Contato</h3>
+            <p><strong>Telefone:</strong> <a href="tel:+5561999225658">+55 61 99922-5658</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:luana.gomes0820@gmail.com">luana.gomes0820@gmail.com</a></p>
+            <p><strong>Site Oficial:</strong> <a href="http://www.luanagbeauty.web.app" target="_blank"
+                rel="noopener">www.luanagbeauty.web.app</a></p>
+
+            <h4>Siga nossas redes:</h4>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/luanagbeauty.co/" target="_blank" rel="noopener"><img
+                  src="imgMobile/121.png" alt="Instagram Luana Gomes Beauty & Co."></a>
+              <a href="https://www.tiktok.com/@luanagbeauty" target="_blank" rel="noopener"><img
+                  src="imgMobile/iconetik.png" alt="TikTok Luana Gomes Beauty"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+        <span class="material-symbols-outlined">star</span>
+        <h1>Luana Gomes</h1>
+      </div>
+      <p class="desktop-footer-text">Maquiadora Profissional | Luana Gomes | Atendimento a domicílio.</p>
+      <p class="mobile-footer-text">Maquiadora Profissional <br> Atendimento a domicílio.</p>
+    </footer>
+
+    <a href="https://wa.me/556199225658" target="_blank" class="whatsapp-float-button"
+      aria-label="Fale conosco pelo WhatsApp">
+      <img src="imgMobile/whatsapp.png" alt="Ícone WhatsApp">
+    </a>
+
+    <a href="#container" class="back-to-top" aria-label="Voltar ao topo da página">
+      <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+  </div>
+  <script type="module" src="dropdown-mobile.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module" src="index.js"></script>
+  <script type="module" src="index3.js"></script>
+
 </body>
+
 </html>
