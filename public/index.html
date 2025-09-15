@@ -11,6 +11,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -66,6 +69,7 @@
             <label for="hero_message">Mensagem:</label>
             <textarea id="hero_message" name="message" required
               placeholder="Gostaria de agendar uma produção para..."></textarea>
+              <div class="g-recaptcha" data-sitekey="6LfSgMorAAAAAJ6AicebqWp1_7Q9GzNrcJqCeWil"></div>
             <button type="submit" class="btn-cta">Enviar</button>
           </form>
         </div>
@@ -422,7 +426,7 @@
  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script type="module" src="main.js"></script>
-  
+  <script type="module" src="formRecaptcha.js"></script>
  
 
 </body>
