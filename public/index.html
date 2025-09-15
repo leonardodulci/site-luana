@@ -17,7 +17,8 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
-<link rel="stylesheet" href="mediacel.css">
+  <!-- Seu CSS principal -->
+  <link rel="stylesheet" href="mediacel.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,40 +29,45 @@
         <h1>Luana Gomes</h1>
         <h2 class="subtitulo">Beauty & Co.</h2>
       </a>
+
+      <!-- Botão do menu hambúrguer -->
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
       <nav class="MenuNav">
         <a href="#sobre">Sobre</a>
         <div class="nav-item dropdown">
-          <a href="#galeria" class="dropbtn">Fotos ▾</a>
+          <!-- Usamos span para dropbtn para evitar navegação automática no mobile -->
+          <span class="dropbtn">Fotos ▾</span>
           <div class="dropdown-content">
             <a href="noivas.html">Noivas</a>
             <a href="galeriaEnsaio.html">Ensaio fotográfico</a>
             <a href="galeria-eventos.html">Eventos especiais</a>
+            <!-- Adicione mais links se quiser: Casamento, Beleza em todas as idades, Batizado, etc -->
           </div>
         </div>
         <a href="#servicos">Serviços</a>
         <a href="#avaliacoes">Avaliações</a>
         <a href="#contato">Contato</a>
       </nav>
-      <button class="menu-toggle" aria-label="Abrir menu">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
     </header>
 
     <main>
-
       <section id="hero" class="hero-section">
         <div class="hero-content">
           <h1>Realce sua beleza única</h1>
           <p>Produção completa para todos os seus momentos especiais.</p>
-      <form id="contactHeroForm">
-        <label for="hero_name">Nome:</label>
-        <input type="text" id="hero_name" name="name" required>
-        <label for="hero_phone">Telefone:</label>
-        <input type="text" id="hero_phone" name="phone" required>
-        <label for="hero_message">Mensagem:</label>
-        <textarea id="hero_message" name="message" required placeholder="Gostaria de agendar uma produção para..."></textarea>
-        <button type="submit" class="btn-cta">Enviar</button>
-      </form>
+          <form id="contactHeroForm">
+            <label for="hero_name">Nome:</label>
+            <input type="text" id="hero_name" name="name" required>
+            <label for="hero_phone">Telefone:</label>
+            <input type="text" id="hero_phone" name="phone" required>
+            <label for="hero_message">Mensagem:</label>
+            <textarea id="hero_message" name="message" required
+              placeholder="Gostaria de agendar uma produção para..."></textarea>
+            <button type="submit" class="btn-cta">Enviar</button>
+          </form>
         </div>
         <div class="hero-image-carousel">
           <img src="imgMobile/noiva01.JPG" alt="Maquiagem profissional Luana Gomes" class="active">
@@ -88,11 +94,11 @@
             estou aqui para torná-la ainda mais especial. Então, se você deseja uma produção completa que realce a sua
             individualidade e destaque a sua beleza única, agende o seu horário comigo agora. </p>
           <p>Vamos construir beleza juntas!</p>
-          <a href="https://wa.me/5561999225658?text=Olá,%20gostaria%20de%20agendar%20um%20horário." class="btn-cta"
-            target="_blank">Marque seu Horário pelo WhatsApp</a>
+          <a href="https://wa.me/5561999225658?text=Olá,%20gostaria%20de%20agendar%20um%20horário."
+            class="btn-cta" target="_blank">Marque seu Horário pelo WhatsApp</a>
         </div>
       </section>
-      <!-- ======= GALERIA (moderna + confiável) ======= -->
+
       <section id="galeria" class="gallery-section">
         <div class="gallery-header">
           <h2>Transformações & Beleza</h2>
@@ -111,90 +117,95 @@
 
           <figure class="gallery-card">
             <button class="card-btn" data-index="1" aria-label="Ampliar: Social com foco nos olhos">
-              <img src="imgMobile/fotonova03.png" alt="Maquiagem social com destaque nos olhos" loading="lazy"
-                width="640" height="800" />
+              <img src="imgMobile/fotonova03.png"
+                alt="Maquiagem social com destaque nos olhos" loading="lazy" width="640" height="800" />
               <figcaption>Social • Olhos em destaque</figcaption>
             </button>
           </figure>
 
           <figure class="gallery-card">
             <button class="card-btn" data-index="2" aria-label="Ampliar: Ensaio fotográfico">
-              <img src="imgMobile/foto01.png" alt="Maquiagem para ensaio fotográfico" loading="lazy" width="640"
-                height="800" />
+              <img src="imgMobile/foto01.png" alt="Maquiagem para ensaio fotográfico" loading="lazy"
+                width="640" height="800" />
               <figcaption>Ensaio fotográfico</figcaption>
             </button>
           </figure>
 
           <figure class="gallery-card">
             <button class="card-btn" data-index="3" aria-label="Ampliar: Leve e natural">
-              <img src="imgMobile/fotonova04.jpg" alt="Maquiagem leve e natural" loading="lazy" width="640"
-                height="800" />
+              <img src="imgMobile/fotonova04.jpg" alt="Maquiagem leve e natural" loading="lazy"
+                width="640" height="800" />
               <figcaption>Leve & natural</figcaption>
             </button>
           </figure>
 
           <figure class="gallery-card">
             <button class="card-btn" data-index="4" aria-label="Ampliar: Idade madura">
-              <img src="imgMobile/fotoTiaClelia.png" alt="Maquiagem para idade madura" loading="lazy" width="640"
-                height="800" />
+              <img src="imgMobile/fotoTiaClelia.png" alt="Maquiagem para idade madura" loading="lazy"
+                width="640" height="800" />
               <figcaption>Beleza em todas as idades</figcaption>
             </button>
           </figure>
 
           <figure class="gallery-card">
             <button class="card-btn" data-index="5" aria-label="Ampliar: Festa com brilho">
-              <img src="imgMobile/fotoLaressa.png" alt="Maquiagem de festa com brilho" loading="lazy" width="640"
-                height="800" />
+              <img src="imgMobile/fotoLaressa.png" alt="Maquiagem de festa com brilho" loading="lazy"
+                width="640" height="800" />
               <figcaption>Festa com brilho</figcaption>
             </button>
           </figure>
 
           <figure class="gallery-card">
             <button class="card-btn" data-index="6" aria-label="Ampliar: Suave e sofisticada">
-              <img src="imgMobile/Cliente5.png" alt="Maquiagem suave e sofisticada" loading="lazy" width="640"
-                height="800" />
+              <img src="imgMobile/Cliente5.png" alt="Maquiagem suave e sofisticada" loading="lazy"
+                width="640" height="800" />
               <figcaption>Suave & sofisticada</figcaption>
             </button>
           </figure>
 
           <figure class="gallery-card">
             <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-              <img src="imgMobile/noivaErica1.JPG" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
-                height="800" />
+              <img src="imgMobile/noivaErica1.JPG" alt="Maquiagem para eventos especiais" loading="lazy"
+                width="640" height="800" />
               <figcaption>Eventos especiais</figcaption>
             </button>
           </figure>
+
           <figure class="gallery-card">
-            <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-              <img src="imgMobile/fotonovaMOBILE2.png" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
-                height="800" />
+            <button class="card-btn" data-index="8" aria-label="Ampliar: Eventos especiais">
+              <img src="imgMobile/fotonovaMOBILE2.png" alt="Maquiagem para eventos especiais" loading="lazy"
+                width="640" height="800" />
               <figcaption>Eventos especiais</figcaption>
             </button>
           </figure>
+
           <figure class="gallery-card">
-            <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-              <img src="imgMobile/fotonovaMOBILE.png" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
-                height="800" />
+            <button class="card-btn" data-index="9" aria-label="Ampliar: Eventos especiais">
+              <img src="imgMobile/fotonovaMOBILE.png" alt="Maquiagem para eventos especiais" loading="lazy"
+                width="640" height="800" />
               <figcaption>Eventos especiais</figcaption>
             </button>
           </figure>
+
           <figure class="gallery-card">
-            <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-              <img src="imgMobile/fotonova1.png" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
-                height="800" />
+            <button class="card-btn" data-index="10" aria-label="Ampliar: Eventos especiais">
+              <img src="imgMobile/fotonova1.png" alt="Maquiagem para eventos especiais" loading="lazy"
+                width="640" height="800" />
               <figcaption>Eventos especiais</figcaption>
             </button>
           </figure>
+
           <figure class="gallery-card">
-            <button class="card-btn" data-index="7" aria-label="Ampliar: Eventos especiais">
-              <img src="imgMobile/fotonova2.png" alt="Maquiagem para eventos especiais" loading="lazy" width="640"
-                height="800" />
+            <button class="card-btn" data-index="11" aria-label="Ampliar: Eventos especiais">
+              <img src="imgMobile/fotonova2.png" alt="Maquiagem para eventos especiais" loading="lazy"
+                width="640" height="800" />
               <figcaption>Eventos especiais</figcaption>
             </button>
           </figure>
 
         </div>
       </section>
+
 
       <!-- ======= LIGHTBOX ======= -->
       <div class="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagens" hidden>
@@ -410,8 +421,11 @@
   </div>
   <script type="module" src="dropdown-mobile.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script type="module" src="menu.js"></script>
+   <script type="module" src="menu2.js"></script>
   <script type="module" src="index.js"></script>
   <script type="module" src="index3.js"></script>
+ 
 
 </body>
 

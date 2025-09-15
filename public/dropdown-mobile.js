@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const dropBtn = document.querySelector(".dropbtn");
   const dropdown = document.querySelector(".dropdown-content");
@@ -15,3 +16,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
