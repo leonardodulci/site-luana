@@ -125,7 +125,7 @@
     top: 100%; /* logo + header */
     left: 0;
     width: 100%;
-    background-color: var(--cor7);
+    background-color: var(--cor6);
     padding: 0.5rem 0;
     border-top: 1px solid var(--cor3);
     z-index: 999;
@@ -160,9 +160,8 @@
   }
 
   .dropdown-content.show-dropdown {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    display: block;
+   
   }
 
   .dropdown-content a {
