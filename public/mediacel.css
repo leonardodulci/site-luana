@@ -61,6 +61,11 @@
     color: #a39287;
   }
 
+  iframe{
+  width: 130px;
+  font-size: 13px;
+}
+
   header {
     display: flex;
     justify-content: space-between;

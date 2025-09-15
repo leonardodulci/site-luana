@@ -1,30 +1,31 @@
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactHeroForm");
 
+  if (!form) return; // Garante que o formulário existe
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("contactHeroForm");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Impede recarregamento da página
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
+    const name = document.getElementById("hero_name").value.trim();
+    const phone = document.getElementById("hero_phone").value.trim();
+    const message = document.getElementById("hero_message").value.trim();
+    const captchaResponse = grecaptcha.getResponse();
 
-        const nome = document.getElementById("hero_name").value.trim();
-        const telefone = document.getElementById("hero_phone").value.trim();
-        const mensagem = document.getElementById("hero_message").value.trim();
-        const recaptchaResp = grecaptcha.getResponse();
+    if (!name || !phone || !message) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
 
-        if (!nome || !telefone || !mensagem) {
-          alert("Por favor, preencha todos os campos.");
-          return;
-        }
-        if (!recaptchaResp) {
-          alert("Por favor, confirme que você não é um robô.");
-          return;
-        }
+    if (!captchaResponse) {
+      alert("Por favor, confirme que você não é um robô.");
+      return;
+    }
 
-        const texto = `Olá, meu nome é ${nome}.%0ATelefone: ${telefone}%0AMensagem: ${mensagem}`;
-        const numero = "5561999225658";
-        const url = `https://wa.me/${numero}?text=${texto}`;
+    // WhatsApp envio
+    const phoneNumber = "5561999225658";
+    const texto = `Olá! Me chamo ${name}, meu telefone é ${phone}. Mensagem:${message}`;
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(texto)}`;
 
-        window.open(url, "_blank");
-      });
-    });
+    window.open(whatsappURL, "_blank");
+  });
+});  
