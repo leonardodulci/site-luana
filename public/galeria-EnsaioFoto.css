@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 /* galeria‑eventos.css */
+body{
+  box-sizing: border-box;
+}
 
 .category-gallery-section {
   padding: clamp(2rem, 6vw, 4rem) 5%;
@@ -9,7 +12,7 @@
 
 .category-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1.5rem;
   justify-items: center;
   text-align: center;
@@ -26,7 +29,7 @@
 
 .category-gallery-grid figure img {
   width: 100%;
-  height: 280px;
+  height: 780px;
   object-fit: cover;
   display: block;
   transition: transform .4s ease, filter .4s ease;
@@ -65,7 +68,7 @@
 
 @media (max-width: 480px) {
   .category-gallery-grid figure img {
-    height: 450px;
+    height: 400px;
   }
 }
 

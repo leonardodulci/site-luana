@@ -158,6 +158,8 @@
 
   .dropdown-content.show-dropdown {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .dropdown-content a {
