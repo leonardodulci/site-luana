@@ -62,8 +62,7 @@
   }
 
   iframe{
-  width: 130px;
-  font-size: 13px;
+ display: none;
 }
 
   header {
@@ -209,12 +208,13 @@
   font-size: 16px;
 }
 
-.hero-section > .contactHeroForm > #hero_message {
+.hero-section > .hero-content > form > #hero_message {
   width: 85%;
   border: 1px solid var(--cor3);
   border-radius: 8px;
   font-family: var(--fonte-principal);
   font-size: 16px;
+  height: 200px;
 }
 
 .contactHeroForm > button {
@@ -240,6 +240,8 @@
   color: white;
   font-weight: 500;
   font-size: 16px;
+  position: relative;
+  top: -60px;
 }
 
 .btn-cta:hover{

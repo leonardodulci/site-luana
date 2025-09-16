@@ -12,7 +12,7 @@ body{
 
 .category-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   justify-items: center;
   text-align: center;
@@ -63,13 +63,13 @@ body{
 
 @media (max-width: 768px) {
   .category-gallery-grid figure img {
-    height: 200px;
+    height: 500px;
   }
 }
 
 @media (max-width: 480px) {
   .category-gallery-grid figure img {
-    height: 400px;
+    height: 500px;
   }
 }
 
